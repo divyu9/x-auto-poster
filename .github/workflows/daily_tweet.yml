@@ -2,20 +2,19 @@ name: Daily X Post — Sarcastic Sindhi
 
 on:
   schedule:
-    # 8:00 AM IST = 2:30 UTC — generate + send to Telegram
     - cron: '30 2 * * *'
-    # Check every 15 min from 8 AM to 10 PM IST (2:30 UTC to 16:30 UTC)
     - cron: '*/15 3-16 * * *'
   workflow_dispatch:
     inputs:
       mode:
-        description: 'generate or check'
+        description: 'generate, check, or post_instant'
         required: false
         default: 'generate'
         type: choice
         options:
           - generate
           - check
+          - post_instant
 
 permissions:
   contents: write
@@ -51,7 +50,7 @@ jobs:
             echo "mode=check" >> $GITHUB_OUTPUT
           fi
 
-      - name: Generate tweets (8 AM IST)
+      - name: Generate 10 tweets (8 AM IST)
         if: steps.mode.outputs.mode == 'generate'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -61,7 +60,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python generate_tweets.py
 
-      - name: Check approvals + post scheduled tweets
+      - name: Check approvals + post scheduled
         if: steps.mode.outputs.mode == 'check'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -72,5 +71,17 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python check_approvals.py
+
+      - name: Post instant tweet (URL mode)
+        if: steps.mode.outputs.mode == 'post_instant'
+        env:
+          X_CONSUMER_KEY: ${{ secrets.X_CONSUMER_KEY }}
+          X_CONSUMER_SECRET: ${{ secrets.X_CONSUMER_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python post_instant.py
