@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 jobs:
-  run:
+  tweet_job:
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
