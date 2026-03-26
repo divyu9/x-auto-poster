@@ -1,12 +1,11 @@
 import os
-import re
 import json
 import base64
 import feedparser
-import anthropic
 import requests
 from datetime import datetime
 
+# Slots for scheduling
 SLOTS = [
     {"label": "11 AM IST", "utc_hour": 5,  "utc_min": 30},
     {"label": "1 PM IST",  "utc_hour": 7,  "utc_min": 30},
@@ -23,187 +22,112 @@ def gh_headers():
 
 def gh_get(filename):
     repo = os.environ["GITHUB_REPOSITORY"]
-    res = requests.get(
-        f"https://api.github.com/repos/{repo}/contents/{filename}",
-        headers=gh_headers()
-    )
-    if not res.ok:
-        return None, None
+    res = requests.get(f"https://api.github.com/repos/{repo}/contents/{filename}", headers=gh_headers())
+    if not res.ok: return None, None
     data = res.json()
     return json.loads(base64.b64decode(data["content"]).decode()), data["sha"]
 
 def gh_put(filename, payload, sha, message):
     repo = os.environ["GITHUB_REPOSITORY"]
-    encoded = base64.b64encode(
-        json.dumps(payload, indent=2, ensure_ascii=False).encode()
-    ).decode()
-    body = {"message": message, "content": encoded}
-    if sha:
-        body["sha"] = sha
-    res = requests.put(
-        f"https://api.github.com/repos/{repo}/contents/{filename}",
-        json=body, headers=gh_headers()
-    )
-    return res.ok
+    encoded = base64.b64encode(json.dumps(payload, indent=2, ensure_ascii=False).encode()).decode()
+    body = {"message": message, "content": encoded, "branch": "main"}
+    if sha: body["sha"] = sha
+    res = requests.put(f"https://api.github.com/repos/{repo}/contents/{filename}", json=body, headers=gh_headers())
+    return res.ok ship
+
+# --- Gemini API Helper ---
+def ask_gemini(system_prompt, user_prompt, model="gemini-1.5-pro"):
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={os.environ['GEMINI_API_KEY']}"
+    payload = {
+        "contents": [{"parts": [{"text": f"SYSTEM: {system_prompt}\nUSER: {user_prompt}"}]}],
+        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 800}
+    }
+    res = requests.post(url, json=payload)
+    if not res.ok:
+        print(f"Gemini Error: {res.text}")
+        return ""
+    return res.json()['candidates'][0]['content']['parts'][0]['text'].strip()
 
 def load_library():
     data, _ = gh_get("topics_library.json")
-    if not data:
-        return []
-    return data.get("topics", [])
+    return data.get("topics", []) if data else []
 
 def fetch_news():
     feeds = [
-        "https://news.google.com/rss/search?q=Jio+Airtel+BSNL+telecom+India&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=tech+scam+fraud+India+consumer&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=smartphone+laptop+gadget+India+price&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=TRAI+internet+policy+India&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=Amazon+Flipkart+India+consumer+scam&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=Apple+Samsung+India+price+launch&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=India+startup+fintech+app+consumer&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=Jio+Airtel+telecom+India&hl=en-IN&gl=IN",
+        "https://news.google.com/rss/search?q=tech+scam+India+consumer&hl=en-IN&gl=IN",
+        "https://news.google.com/rss/search?q=smartphone+launch+India+price&hl=en-IN&gl=IN",
+        "https://news.google.com/rss/search?q=Amazon+Flipkart+India+scam&hl=en-IN&gl=IN"
     ]
     headlines = []
     for url in feeds:
         try:
             feed = feedparser.parse(url)
-            for entry in feed.entries[:5]:
+            for entry in feed.entries[:8]:
                 title = entry.title.split(" - ")[0].strip()
-                if len(title) > 20:
-                    headlines.append(title)
-        except Exception as e:
-            print(f"Feed error: {e}")
-    seen = set()
-    unique = []
-    for h in headlines:
-        if h not in seen:
-            seen.add(h)
-            unique.append(h)
-    return unique[:30]
+                if len(title) > 20: headlines.append(title)
+        except: pass
+    return list(set(headlines))[:40]
 
 def pick_10_topics(headlines, library_topics):
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    headlines_text = "\n".join([f"{i+1}. {h}" for i, h in enumerate(headlines)])
-    lib_section = ""
-    if library_topics:
-        lib_text = "\n".join([f"- {t['text']}" for t in library_topics])
-        lib_section = f"\n\nCustom topics from my library (include if relevant):\n{lib_text}"
-
-    res = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=500,
-        messages=[{"role": "user", "content": f"""Pick 10 best topics for Sarcastic Sindhi — Indian consumer-advocate tech creator (391K YouTube subs). Audience: Indian males 18-35. Focus on: scams, telecom, gadgets, consumer rights, India pricing.
-
-News headlines:
-{headlines_text}{lib_section}
-
-Return ONLY a JSON array of exactly 10 topic strings, no markdown:
-["topic1", "topic2", ..., "topic10"]"""}]
-    )
-    raw = res.content[0].text.strip().replace("```json","").replace("```","").strip()
-    return json.loads(raw)
+    h_text = "\n".join([f"- {h}" for h in headlines])
+    l_text = "\n".join([f"- {t['text']}" for t in library_topics])
+    
+    sys_msg = "You are a content strategist for Sarcastic Sindhi, a top Indian tech creator. Select the most viral/relevant topics."
+    user_msg = f"Pick the 10 best topics from these news headlines and library topics:\n\nNEWS:\n{h_text}\n\nLIBRARY:\n{l_text}\n\nReturn ONLY a valid JSON array of strings: [\"topic1\", \"topic2\", ...]"
+    
+    raw = ask_gemini(sys_msg, user_msg, model="gemini-1.5-flash") # Flash is enough for selection
+    try:
+        # Clean JSON if Gemini adds markdown
+        clean = raw.replace("```json", "").replace("```", "").strip()
+        return json.loads(clean)
+    except:
+        return headlines[:10]
 
 def write_tweet(topic):
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    res = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=350,
-        system="""Tu Sarcastic Sindhi ka X account hai — Chandan Bulani, consumer-advocate tech creator, 391K YouTube subscribers.
-
-VOICE RULES — ye follow karna ZAROOR hai:
-- 50% Hindi + 50% English — natural Hinglish jaise Chandan bolta hai
-- Sarcastic aur brutally honest — "yaar ye toh scam hai" energy
-- Consumer ka POV — "company tujhe bewakoof bana rahi hai" angle
-- Pehle 5 words mein punch honi chahiye — seedha point pe aao
-- ₹ use karo prices ke liye — dollar nahi
-- Jio, Airtel, Flipkart, Amazon India, TRAI reference karo jahan fit ho
-- End mein sharp verdict YA rhetorical question jo reader ko angry/aware kare
-- Aam aadmi ki jeb pe kya asar padega — yeh ZAROOR batao
-- Natural phrases: "yaar sun", "bhai seriously", "samajh lo", "bewakoof mat bano", "likh ke de sakta hu"
-
-OUTPUT: SIRF tweet text. 280 chars se kam. 2-3 hashtags end mein. Quotes mat lagao.""",
-        messages=[{"role": "user", "content": f"Is India tech news pe ek sarcastic consumer-POV Hinglish tweet likho: {topic}"}]
-    )
-    tweet = res.content[0].text.strip().strip('"').strip("'")
-    return tweet[:280] if len(tweet) > 280 else tweet
+    sys_msg = """You are Sarcastic Sindhi (Chandan Bulani), a tech creator and consumer advocate.
+    Write a brutally honest, sarcastic tweet in ENGLISH.
+    - Style: Modern, sharp, pro-consumer.
+    - Punchy hook, sharp verdict.
+    - Use ₹ for money. 
+    - 280 chars max. No hashtags."""
+    
+    user_msg = f"Write a sarcastic English tweet about this tech news: {topic}"
+    tweet = ask_gemini(sys_msg, user_msg, model="gemini-1.5-pro")
+    return tweet.strip('"').strip("'")[:280]
 
 def send_to_telegram(all_tweets):
-    token = os.environ["TELEGRAM_BOT_TOKEN"]
-    chat_id = os.environ["TELEGRAM_CHAT_ID"]
-
-    # Intro message
-    requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json={
-        "chat_id": chat_id,
-        "text": (
-            f"🔴 *Sarcastic Sindhi — {datetime.now().strftime('%d %b %Y')}*\n\n"
-            f"*10 tweets ready hain!*\n\n"
-            f"4 approve karo — slots:\n"
-            f"• 1st approved → 11 AM\n"
-            f"• 2nd approved → 1 PM\n"
-            f"• 3rd approved → 5 PM\n"
-            f"• 4th approved → 9 PM\n\n"
-            f"_5th onwards approve kiye toh skip ho jayenge_"
-        ),
-        "parse_mode": "Markdown"
-    })
+    token, chat_id = os.environ["TELEGRAM_BOT_TOKEN"], os.environ["TELEGRAM_CHAT_ID"]
+    intro = f"🔴 *Sarcastic Sindhi — Daily Drafts*\n\n10 tweets ready in English. Approve 4 for the slots."
+    requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json={"chat_id": chat_id, "text": intro, "parse_mode": "Markdown"})
 
     for i, t in enumerate(all_tweets):
         res = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json={
             "chat_id": chat_id,
-            "text": (
-                f"📱 *Option {i+1}/10*\n\n"
-                f"{t['tweet']}\n\n"
-                f"`{len(t['tweet'])}/280 chars`"
-            ),
+            "text": f"📱 *Option {i+1}*\n\n{t['tweet']}",
             "parse_mode": "Markdown",
-            "reply_markup": {"inline_keyboard": [[
-                {"text": "✅ Approve", "callback_data": f"approve_{i}"},
-                {"text": "❌ Skip",    "callback_data": f"skip_{i}"}
-            ]]}
+            "reply_markup": {"inline_keyboard": [[{"text": "✅ Approve", "callback_data": f"approve_{i}"}, {"text": "❌ Skip", "callback_data": f"skip_{i}"}]]}
         })
-        if res.ok:
-            all_tweets[i]["message_id"] = res.json()["result"]["message_id"]
-            print(f"Sent option {i+1}/10")
+        if res.ok: all_tweets[i]["message_id"] = res.json()["result"]["message_id"]
     return all_tweets
 
-def save_to_repo(all_tweets):
-    payload = {
-        "tweets": all_tweets,
-        "slots": SLOTS,
-        "generated_at": datetime.now().isoformat(),
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "approved_count": 0
-    }
-    _, sha = gh_get("pending_tweets.json")
-    ok = gh_put("pending_tweets.json", payload, sha, f"Daily tweets {datetime.now().strftime('%Y-%m-%d')}")
-    print("Saved to repo" if ok else "Save FAILED")
-
 def main():
-    print(f"[{datetime.now().isoformat()}] Generating 10 tweets...")
     headlines = fetch_news()
-    print(f"Fetched {len(headlines)} headlines (free RSS)")
     library = load_library()
-    print(f"Library: {len(library)} custom topics")
     topics = pick_10_topics(headlines, library)
-    print(f"10 topics selected")
-
+    
     all_tweets = []
-    for i, topic in enumerate(topics):
-        tweet_text = write_tweet(topic)
+    for topic in topics:
         all_tweets.append({
-            "topic": topic,
-            "tweet": tweet_text,
-            "status": "pending",
-            "slot_index": None,
-            "slot_label": None,
-            "utc_hour": None,
-            "utc_min": None,
-            "message_id": None
+            "topic": topic, "tweet": write_tweet(topic),
+            "status": "pending", "slot_label": None, "message_id": None
         })
-        print(f"[{i+1}/10] {tweet_text[:60]}...")
 
     all_tweets = send_to_telegram(all_tweets)
-    save_to_repo(all_tweets)
-    print("Done! Check Telegram — approve 4 topics.")
+    
+    payload = {"tweets": all_tweets, "slots": SLOTS, "date": datetime.now().strftime("%Y-%m-%d"), "approved_count": 0}
+    _, sha = gh_get("pending_tweets.json")
+    gh_put("pending_tweets.json", payload, sha, f"Daily tweets {payload['date']}")
 
 if __name__ == "__main__":
     main()
