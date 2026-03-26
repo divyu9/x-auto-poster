@@ -49,15 +49,19 @@ def send_tg(text):
 def main():
     print(f"[{datetime.now().isoformat()}] Posting instant tweet...")
     data, sha = gh_get("instant_tweet.json")
-    if not data:
-        print("No instant_tweet.json found")
-        return
-    if data.get("status") not in ["pending", "posting"]:
-        print(f"Status is {data.get('status')} — skipping")
+    
+    if not data or "tweet" not in data:
+        print("Error: No tweet data found in JSON")
         return
 
-    tweet_text = data["tweet"]
-    print(f"Posting: {tweet_text[:80]}...")
+    tweet_text = data["tweet"].strip() # Khali spaces hatao
+    
+    if not tweet_text:
+        print("Error: Tweet text is empty. Skipping post.")
+        send_tg("❌ Post cancelled: Tweet text was empty.")
+        return
+
+    print(f"Attempting to post: {tweet_text[:80]}...")
 
     client = tweepy.Client(
         consumer_key=os.environ["X_CONSUMER_KEY"],
@@ -65,22 +69,25 @@ def main():
         access_token=os.environ["X_ACCESS_TOKEN"],
         access_token_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
     )
+
     try:
+        # Twitter API v2 call
         response = client.create_tweet(text=tweet_text)
         tweet_id = response.data["id"]
-        data["status"]   = "posted"
+        
+        # Update GitHub status
+        data["status"] = "posted"
         data["tweet_id"] = str(tweet_id)
         gh_put("instant_tweet.json", data, sha, "Instant tweet posted")
-        send_tg(
-            f"🟢 *Posted!*\n\n{tweet_text}\n\n"
-            f"[View on X](https://x.com/sarcasticsindhi/status/{tweet_id})"
-        )
+        
+        send_tg(f"🟢 *Posted Successfully!*\n\n{tweet_text}\n\n[View on X](https://x.com/user/status/{tweet_id})")
         print(f"Posted! ID: {tweet_id}")
+
     except Exception as e:
+        print(f"Twitter API Error: {e}")
         data["status"] = "failed"
-        gh_put("instant_tweet.json", data, sha, "Instant tweet failed", )
-        send_tg(f"❌ Post failed: {str(e)[:100]}")
-        print(f"Error: {e}")
+        gh_put("instant_tweet.json", data, sha, "Instant tweet failed")
+        send_tg(f"❌ X Post failed: {str(e)}")
 
 if __name__ == "__main__":
     main()
