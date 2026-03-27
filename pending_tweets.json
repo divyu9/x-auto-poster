@@ -1,104 +1,104 @@
 {
   "tweets": [
     {
-      "topic": "OnePlus 15T Launched With 7,500mAh Battery, Dual 50-Megapixel Cameras: Price, Specifications",
-      "tweet": "",
+      "topic": "Jio, Airtel, Vi unite, flag Mumbai Metro 3 IBS tender, offer buyout",
+      "tweet": "Jio, Airtel, Vi ki dosti? Bhai, ye toh seedha-seedha cartel hai! Mumbai Metro 3 IBS tender buyout offer? Samaj",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 207
+      "message_id": 218
     },
     {
-      "topic": "I4C teams up with Amazon India to launch anti-scam campaign ahead of festive season",
-      "tweet": "",
+      "topic": "Beware of Online Scams During Flipkart Big Billion Days, Amazon Great Indian Festival & Other Festive Sales",
+      "tweet": "Yaar sun, yeh 'deals' nahi, seedha jeb ka scam hai! Flipkart Big Billion Days, Amazon Great Indian Festival? ₹1 discount dik",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 208
+      "message_id": 219
     },
     {
-      "topic": "Xiaomi, Oppo, Realme, OnePlus see first India revenue drop as premium shift aids Apple, Samsung: Report",
-      "tweet": "",
+      "topic": "India’s Telecom Subscribers Reach 1.31 Billion; Jio, Airtel Dominate",
+      "tweet": "Bhai seriously, 1.31 Billion subscribers? Wah! Jio-Airtel ka raj hai, par customer ko kya mila? Better service?",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 209
+      "message_id": 220
     },
     {
-      "topic": "SBI warns customers: Scammers are sending fake 'bank letters' with these app links",
-      "tweet": "",
+      "topic": "Govt plans new smartphone export incentives in a boost for Apple, Samsung",
+      "tweet": "Wah re sarkar! Apple, Samsung ko export incentives? Bhai seriously, humare liye toh abhi bhi iPhone ₹1,00,00",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 210
-    },
-    {
-      "topic": "Scams don’t stop at telecom: India needs platform-neutral communication rules",
-      "tweet": "",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 211
-    },
-    {
-      "topic": "Internet subscribers in India grew 1.1% in October-December 2025 quarter: TRAI",
-      "tweet": "",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 212
-    },
-    {
-      "topic": "Samsung Brings iPhone-Style Upgrade Plan To India: Get The Samsung Galaxy S26 Ultra At Half Its Price",
-      "tweet": "",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 213
+      "message_id": 221
     },
     {
       "topic": "DoT’s Draft Rules Mandate Authorisation for IXPs, Skip TRAI’s Content Blocking Clause",
-      "tweet": "",
+      "tweet": "Lo bhai, DoT ki nayi kahani. IXP authorisation? Matlab aur paperwork, aur control. Bhai seriously, isse internet speed bad",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 214
+      "message_id": 222
     },
     {
-      "topic": "Delhi Delivery Agent Defrauds Amazon, Flipkart, Used To Return Old Items",
-      "tweet": "",
+      "topic": "Internet subscribers in India grew 1.1 pc in October-December 2025 quarter: TRAI",
+      "tweet": "Bhai seriously, TRAI bol raha internet subscribers 1.1% badhe. Wah! Matlab, Jio-Airtel ne fir ₹5",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 215
+      "message_id": 223
     },
     {
-      "topic": "$400 million Coinbase scam: What role did THIS Indian call centre play in the company's biggest-ever fraud?",
+      "topic": "Supply-chain scam: Ahmedabad police dismantle gadget-swapping interstate syndicate",
       "tweet": "",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 216
+      "message_id": 224
+    },
+    {
+      "topic": "Jio offers to install neutral telecom infra in underground Metro 3; Airtel and Vi back it",
+      "tweet": "",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 225
+    },
+    {
+      "topic": "OnePlus 15T with 7,500mAh battery, Snapdragon 8 Elite Gen 5 SoC, and 50MP cameras is now official in China",
+      "tweet": "",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 226
+    },
+    {
+      "topic": "Airtel vs Jio: How India’s telecom market became a duopoly",
+      "tweet": "",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 227
     }
   ],
   "slots": [
@@ -124,6 +124,6 @@
     }
   ],
   "date": "2026-03-27",
-  "generated_at": "2026-03-27T06:25:03.104506",
+  "generated_at": "2026-03-27T06:38:03.491064",
   "approved_count": 0
 }
