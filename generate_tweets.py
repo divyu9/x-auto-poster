@@ -41,7 +41,7 @@ def ask_gemini(system_prompt, user_prompt, model="gemini-2.5-flash"):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={os.environ['GEMINI_API_KEY']}"
     payload = {
         "contents": [{"parts": [{"text": f"SYSTEM: {system_prompt}\nUSER: {user_prompt}"}]}],
-        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 800}
+        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 400}
     }
     res = requests.post(url, json=payload)
     if not res.ok:
@@ -90,7 +90,7 @@ def pick_10_topics(headlines, library_topics):
         f'["topic1", "topic2", "topic3", "topic4", "topic5", "topic6", "topic7", "topic8", "topic9", "topic10"]'
     )
 
-    raw = ask_gemini(sys_msg, user_msg, model="gemini-2.5-flash")
+    raw = ask_gemini(sys_msg, user_msg)
     try:
         clean = raw.replace("```json", "").replace("```", "").strip()
         start = clean.index("[")
@@ -101,30 +101,40 @@ def pick_10_topics(headlines, library_topics):
         return headlines[:10]
 
 def write_tweet(topic):
-    sys_msg = """Tu Sarcastic Sindhi hai — Chandan Bulani, consumer-advocate tech creator, 391K YouTube subscribers.
+    sys_msg = """You are writing tweets for Sarcastic Sindhi (Chandan Bulani), Indian tech consumer advocate, 391K YouTube subscribers.
 
-TWEET FORMAT — exactly yeh structure follow karo:
-Line 1: News ka seedha fact — kya hua, exact number ya detail ke saath (real info)
-Line 2: Teri ek genuine consumer POV line — aam aadmi ko isse kya fark padega
+Write ONE complete tweet with exactly 2 sentences:
+SENTENCE 1: The news fact with specific number/price/company. Must be a grammatically complete sentence.
+SENTENCE 2: Your sarcastic consumer POV — what this means for the reader. Must be a grammatically complete sentence.
 
-RULES:
-- 220-270 characters USE KARO — short mat rehna
-- Complete sentences — koi bhi line incomplete nahi
-- Fact-first — pehle actual news, phir opinion
-- Tone: curious + sarcastic, NOT angry or blaming
-- 50% Hindi + 50% English — natural Hinglish
-- Rupee symbol use karo
-- 2 relevant hashtags end mein
+STRICT RULES:
+- Both sentences MUST be complete — never cut off mid-sentence
+- Total length: 200-260 characters including hashtags
+- Language: Hinglish in Roman script only — NO Devanagari (no हिंदी script)
+- Mix Hindi words written in English with English words naturally
+- Use rupee symbol ₹ for all prices
+- End with exactly 2 relevant hashtags
+- Output ONLY the tweet, no explanation, no quotes
 
-EXAMPLE FORMAT:
-"Jio ne 5G users ke liye ₹299 wala plan band kar diya, ab sirf ₹399+ wale plans available hain. Matlab speed toh dete hain, lekin saste mein nahi — upgrade karo ya suffer karo. #Jio #Telecom"
+GOOD EXAMPLE:
+OnePlus 15T launch hua ₹49,999 mein 7500mAh battery ke saath. Itni badi battery ke baad bhi agar phone slow hai toh bhai, kharcha kahan gaya? #OnePlus #IndianTech
 
-OUTPUT: SIRF tweet text. No quotes."""
+BAD EXAMPLE (incomplete sentence):
+Samsung ne Galaxy S26 series ki India prices announce kar di hain, starting"""
 
-    user_msg = f"Is India tech news pe ek sarcastic consumer-POV Hinglish tweet likho: {topic}"
-    tweet = ask_gemini(sys_msg, user_msg, model="gemini-2.5-flash")
+    user_msg = f"Write a complete 2-sentence Hinglish tweet about this India tech news: {topic}"
+    tweet = ask_gemini(sys_msg, user_msg)
     tweet = tweet.strip().strip('"').strip("'")
-    return tweet[:280] if len(tweet) > 280 else tweet
+
+    # If over 280 chars, cut at last complete sentence
+    if len(tweet) > 280:
+        last_period = tweet[:277].rfind('.')
+        if last_period > 150:
+            tweet = tweet[:last_period + 1]
+        else:
+            tweet = tweet[:277] + "..."
+
+    return tweet
 
 def send_to_telegram(all_tweets):
     token = os.environ["TELEGRAM_BOT_TOKEN"]
@@ -177,7 +187,7 @@ def main():
     for i, topic in enumerate(topics):
         print(f"Writing tweet {i+1}/10: {topic[:50]}...")
         tweet = write_tweet(topic)
-        print(f"  → {tweet[:60]}...")
+        print(f"  → {tweet[:80]}...")
         time.sleep(10)
         all_tweets.append({
             "topic": topic,
