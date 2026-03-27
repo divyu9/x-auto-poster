@@ -1,74 +1,104 @@
 {
   "tweets": [
     {
-      "topic": "How safe are you from fraud during Amazon and Flipkart's Republic Day sales, and can cyber insurance...",
+      "topic": "OnePlus 15T Launched With 7,500mAh Battery, Dual 50-Megapixel Cameras: Price, Specifications",
       "tweet": "",
       "status": "pending",
+      "slot_index": null,
       "slot_label": null,
-      "message_id": 195
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 207
     },
     {
-      "topic": "India challenges Jio, Airtel over dropping entry-level plans",
+      "topic": "I4C teams up with Amazon India to launch anti-scam campaign ahead of festive season",
       "tweet": "",
       "status": "pending",
+      "slot_index": null,
       "slot_label": null,
-      "message_id": 196
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 208
     },
     {
-      "topic": "RBI acts tough against cyber frauds, directs all banks to use DoT’s FRI technology to protect bank custome",
+      "topic": "Xiaomi, Oppo, Realme, OnePlus see first India revenue drop as premium shift aids Apple, Samsung: Report",
       "tweet": "",
       "status": "pending",
+      "slot_index": null,
       "slot_label": null,
-      "message_id": 197
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 209
+    },
+    {
+      "topic": "SBI warns customers: Scammers are sending fake 'bank letters' with these app links",
+      "tweet": "",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 210
+    },
+    {
+      "topic": "Scams don’t stop at telecom: India needs platform-neutral communication rules",
+      "tweet": "",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 211
+    },
+    {
+      "topic": "Internet subscribers in India grew 1.1% in October-December 2025 quarter: TRAI",
+      "tweet": "",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 212
+    },
+    {
+      "topic": "Samsung Brings iPhone-Style Upgrade Plan To India: Get The Samsung Galaxy S26 Ultra At Half Its Price",
+      "tweet": "",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 213
+    },
+    {
+      "topic": "DoT’s Draft Rules Mandate Authorisation for IXPs, Skip TRAI’s Content Blocking Clause",
+      "tweet": "",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 214
+    },
+    {
+      "topic": "Delhi Delivery Agent Defrauds Amazon, Flipkart, Used To Return Old Items",
+      "tweet": "",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 215
     },
     {
       "topic": "$400 million Coinbase scam: What role did THIS Indian call centre play in the company's biggest-ever fraud?",
       "tweet": "",
       "status": "pending",
+      "slot_index": null,
       "slot_label": null,
-      "message_id": 198
-    },
-    {
-      "topic": "Nothing Phone 4a Series London Event: Hands-On with the 4a Pro",
-      "tweet": "",
-      "status": "pending",
-      "slot_label": null,
-      "message_id": 199
-    },
-    {
-      "topic": "Redmi 15A to launch in India on March 27th; new red colour variant for Redmi Note 15 series teased",
-      "tweet": "",
-      "status": "pending",
-      "slot_label": null,
-      "message_id": 200
-    },
-    {
-      "topic": "Vivo Y21 5G and Vivo Y11 5G Launched in India with 6,500mAh Batteries, Dimensity 6300 Chipset",
-      "tweet": "",
-      "status": "pending",
-      "slot_label": null,
-      "message_id": 201
-    },
-    {
-      "topic": "Jio, Airtel, Vi unite, flag Mumbai Metro 3 IBS tender, offer buyout",
-      "tweet": "",
-      "status": "pending",
-      "slot_label": null,
-      "message_id": 202
-    },
-    {
-      "topic": "Jio offers to install neutral telecom infra in underground Metro 3; Airtel and Vi back it",
-      "tweet": "",
-      "status": "pending",
-      "slot_label": null,
-      "message_id": 203
-    },
-    {
-      "topic": "Delivery box scam: How Amazon, Flipkart packages are being used to steal your money? Know here",
-      "tweet": "",
-      "status": "pending",
-      "slot_label": null,
-      "message_id": 204
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 216
     }
   ],
   "slots": [
@@ -94,5 +124,6 @@
     }
   ],
   "date": "2026-03-27",
+  "generated_at": "2026-03-27T06:25:03.104506",
   "approved_count": 0
 }
