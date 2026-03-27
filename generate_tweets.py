@@ -172,6 +172,7 @@ def send_to_telegram(all_tweets):
             "text": f"Option {i+1}/10\n\n{tweet_text}\n\n{len(tweet_text)}/280 chars",
             "reply_markup": {"inline_keyboard": [[
                 {"text": "Approve", "callback_data": f"approve_{i}"},
+                {"text": "Edit",    "callback_data": f"edit_{i}"},
                 {"text": "Skip",    "callback_data": f"skip_{i}"}
             ]]}
         })
