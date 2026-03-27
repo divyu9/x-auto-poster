@@ -33,7 +33,7 @@ def gh_put(filename, payload, sha, message):
     body = {"message": message, "content": encoded, "branch": "main"}
     if sha: body["sha"] = sha
     res = requests.put(f"https://api.github.com/repos/{repo}/contents/{filename}", json=body, headers=gh_headers())
-    return res.ok ship
+    return res.ok
 
 # --- Gemini API Helper ---
 def ask_gemini(system_prompt, user_prompt, model="gemini-1.5-pro"):
