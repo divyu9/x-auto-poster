@@ -4,6 +4,7 @@ import base64
 import feedparser
 import requests
 import time
+import anthropic
 from datetime import datetime
 
 SLOTS = [
@@ -22,7 +23,10 @@ def gh_headers():
 
 def gh_get(filename):
     repo = os.environ["GITHUB_REPOSITORY"]
-    res = requests.get(f"https://api.github.com/repos/{repo}/contents/{filename}", headers=gh_headers())
+    res = requests.get(
+        f"https://api.github.com/repos/{repo}/contents/{filename}",
+        headers=gh_headers()
+    )
     if not res.ok:
         return None, None
     data = res.json()
@@ -30,18 +34,24 @@ def gh_get(filename):
 
 def gh_put(filename, payload, sha, message):
     repo = os.environ["GITHUB_REPOSITORY"]
-    encoded = base64.b64encode(json.dumps(payload, indent=2, ensure_ascii=False).encode()).decode()
+    encoded = base64.b64encode(
+        json.dumps(payload, indent=2, ensure_ascii=False).encode()
+    ).decode()
     body = {"message": message, "content": encoded, "branch": "main"}
     if sha:
         body["sha"] = sha
-    res = requests.put(f"https://api.github.com/repos/{repo}/contents/{filename}", json=body, headers=gh_headers())
+    res = requests.put(
+        f"https://api.github.com/repos/{repo}/contents/{filename}",
+        json=body, headers=gh_headers()
+    )
     return res.ok
 
-def ask_gemini(system_prompt, user_prompt, model="gemini-2.5-flash"):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={os.environ['GEMINI_API_KEY']}"
+# ── Gemini — only for topic selection (free) ──────────────────────────────────
+def ask_gemini(system_prompt, user_prompt):
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={os.environ['GEMINI_API_KEY']}"
     payload = {
         "contents": [{"parts": [{"text": f"SYSTEM: {system_prompt}\nUSER: {user_prompt}"}]}],
-        "generationConfig": {"temperature": 0.7, "maxOutputTokens": 400}
+        "generationConfig": {"temperature": 0.5, "maxOutputTokens": 600}
     }
     res = requests.post(url, json=payload)
     if not res.ok:
@@ -52,6 +62,44 @@ def ask_gemini(system_prompt, user_prompt, model="gemini-2.5-flash"):
     except Exception as e:
         print(f"Gemini parse error: {e}")
         return ""
+
+# ── Claude Haiku — for tweet writing (quality) ────────────────────────────────
+def write_tweet(topic):
+    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+
+    res = client.messages.create(
+        model="claude-haiku-4-5-20251001",
+        max_tokens=200,
+        system="""Tu Sarcastic Sindhi hai — Chandan Bulani, Indian tech consumer advocate, 391K YouTube subscribers.
+
+Tweet likhne ka formula — 2 complete sentences:
+1. NEWS FACT: Exact kya hua — company, number, price ke saath. Poora sentence.
+2. CONSUMER POV: Aam aadmi ko isse kya fark padega. Sharp aur sarcastic. Poora sentence.
+
+RULES:
+- 200-260 characters total (hashtags samet)
+- Pure English — no Hindi words at all
+- Rupee symbol ₹ use karo
+- 2 relevant hashtags end mein
+- Dono sentences grammatically complete
+- Output: SIRF tweet text, koi quotes nahi
+
+EXAMPLE:
+OnePlus 15T launched in India at ₹49,999 with a massive 7500mAh battery. Finally a phone that wont die before your workday ends — but will your wallet survive? #OnePlus #IndianTech""",
+        messages=[{
+            "role": "user",
+            "content": f"Write a 2-sentence English tweet about this India tech news: {topic}"
+        }]
+    )
+
+    tweet = res.content[0].text.strip().strip('"').strip("'")
+
+    # Smart trim — cut at last complete sentence if over 280
+    if len(tweet) > 280:
+        last_period = tweet[:277].rfind('.')
+        tweet = tweet[:last_period + 1] if last_period > 150 else tweet[:277] + "..."
+
+    return tweet
 
 def load_library():
     data, _ = gh_get("topics_library.json")
@@ -82,11 +130,12 @@ def pick_10_topics(headlines, library_topics):
     h_text = "\n".join([f"- {h}" for h in headlines])
     l_text = "\n".join([f"- {t['text']}" for t in library_topics]) if library_topics else "None"
 
-    sys_msg = "You are a content strategist for Sarcastic Sindhi, a top Indian consumer-advocate tech creator. Select the most viral and consumer-relevant topics."
+    sys_msg = "You are a content strategist for Sarcastic Sindhi, India's top consumer-advocate tech creator."
     user_msg = (
-        f"Pick the 10 best topics from these news headlines and library topics.\n\n"
+        f"Pick the 10 best topics for viral Indian tech tweets from these headlines and library topics.\n\n"
         f"NEWS:\n{h_text}\n\nLIBRARY TOPICS:\n{l_text}\n\n"
-        f"Return ONLY a valid JSON array of 10 strings, no markdown, no explanation:\n"
+        f"Prioritize: scams, consumer rights, price reveals, telecom updates, gadget launches.\n"
+        f"Return ONLY a JSON array of 10 strings:\n"
         f'["topic1", "topic2", "topic3", "topic4", "topic5", "topic6", "topic7", "topic8", "topic9", "topic10"]'
     )
 
@@ -97,64 +146,27 @@ def pick_10_topics(headlines, library_topics):
         end = clean.rindex("]") + 1
         return json.loads(clean[start:end])
     except:
-        print(f"Topic parse failed, using headlines directly")
+        print("Topic parse failed, using headlines directly")
         return headlines[:10]
-
-def write_tweet(topic):
-    sys_msg = """You are writing tweets for Sarcastic Sindhi (Chandan Bulani), Indian tech consumer advocate, 391K YouTube subscribers.
-
-Write ONE complete tweet with exactly 2 sentences:
-SENTENCE 1: The news fact with specific number/price/company. Must be a grammatically complete sentence.
-SENTENCE 2: Your sarcastic consumer POV — what this means for the reader. Must be a grammatically complete sentence.
-
-STRICT RULES:
-- Both sentences MUST be complete — never cut off mid-sentence
-- Total length: 200-260 characters including hashtags
-- Pure English — no Hindi words at all
-- Use rupee symbol ₹ for all prices
-- End with exactly 2 relevant hashtags
-- Output ONLY the tweet, no explanation, no quotes
-
-GOOD EXAMPLE:
-OnePlus 15T launched in India at ₹49,999 with a massive 7500mAh battery. Finally a phone that won't die before your workday ends — but will your wallet survive? #OnePlus #IndianTech
-
-BAD EXAMPLE (incomplete sentence):
-Samsung ne Galaxy S26 series ki India prices announce kar di hain, starting"""
-
-    user_msg = f"Write a complete 2-sentence English tweet about this India tech news: {topic}"
-    tweet = ask_gemini(sys_msg, user_msg)
-    tweet = tweet.strip().strip('"').strip("'")
-
-    # If over 280 chars, cut at last complete sentence
-    if len(tweet) > 280:
-        last_period = tweet[:277].rfind('.')
-        if last_period > 150:
-            tweet = tweet[:last_period + 1]
-        else:
-            tweet = tweet[:277] + "..."
-
-    return tweet
 
 def send_to_telegram(all_tweets):
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     chat_id = os.environ["TELEGRAM_CHAT_ID"]
 
-    intro = (
-        f"Sarcastic Sindhi — {datetime.now().strftime('%d %b %Y')}\n\n"
-        f"10 tweets ready! 4 approve karo:\n"
-        f"1st approved → 11 AM\n"
-        f"2nd approved → 1 PM\n"
-        f"3rd approved → 5 PM\n"
-        f"4th approved → 9 PM"
-    )
-    requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
-                  json={"chat_id": chat_id, "text": intro})
+    requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json={
+        "chat_id": chat_id,
+        "text": (
+            f"Sarcastic Sindhi — {datetime.now().strftime('%d %b %Y')}\n\n"
+            f"10 tweets ready! 4 approve karo:\n"
+            f"1st approved → Instant post\n"
+            f"2nd approved → 1 PM\n"
+            f"3rd approved → 5 PM\n"
+            f"4th approved → 9 PM"
+        )
+    })
 
     for i, t in enumerate(all_tweets):
-        tweet_text = t["tweet"]
-        if not tweet_text:
-            tweet_text = "[Tweet generation failed for this topic]"
-
+        tweet_text = t["tweet"] or "[Tweet generation failed]"
         res = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json={
             "chat_id": chat_id,
             "text": f"Option {i+1}/10\n\n{tweet_text}\n\n{len(tweet_text)}/280 chars",
@@ -165,9 +177,6 @@ def send_to_telegram(all_tweets):
         })
         if res.ok:
             all_tweets[i]["message_id"] = res.json()["result"]["message_id"]
-        else:
-            print(f"Telegram send error for tweet {i}: {res.text}")
-
     return all_tweets
 
 def main():
@@ -184,10 +193,9 @@ def main():
 
     all_tweets = []
     for i, topic in enumerate(topics):
-        print(f"Writing tweet {i+1}/10: {topic[:50]}...")
+        print(f"[{i+1}/10] Writing: {topic[:60]}...")
         tweet = write_tweet(topic)
-        print(f"  → {tweet[:80]}...")
-        time.sleep(10)
+        print(f"  → ({len(tweet)} chars) {tweet[:80]}...")
         all_tweets.append({
             "topic": topic,
             "tweet": tweet,
@@ -196,8 +204,10 @@ def main():
             "slot_label": None,
             "utc_hour": None,
             "utc_min": None,
-            "message_id": None
+            "message_id": None,
+            "instant": False
         })
+        time.sleep(3)
 
     all_tweets = send_to_telegram(all_tweets)
 
