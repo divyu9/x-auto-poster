@@ -1,48 +1,76 @@
 {
   "tweets": [
     {
+      "topic": "Airtel vs Jio: How India’s telecom market became a duopoly",
+      "tweet": "",
+      "status": "pending",
+      "slot_label": null,
+      "message_id": 184
+    },
+    {
+      "topic": "Not frequently checking Amazon and Flipkart accounts? Credit fraud misusing unused e-commerce accounts",
+      "tweet": "",
+      "status": "pending",
+      "slot_label": null,
+      "message_id": 185
+    },
+    {
+      "topic": "सोशल लिस्ट: Flipkart Big Billion Days और Amazon Great Indian Festival Sale को Scam कह रहे हैं लोग? | The Lallantop",
+      "tweet": "",
+      "status": "pending",
+      "slot_label": null,
+      "message_id": 186
+    },
+    {
+      "topic": "Beware of Online Scams During Flipkart Big Billion Days, Amazon Great Indian Festival & Other Festive Sales",
+      "tweet": "",
+      "status": "pending",
+      "slot_label": null,
+      "message_id": 187
+    },
+    {
       "topic": "Seven out of 10 consumers in India encountered tech support scams in the past year: Microsoft survey",
-      "tweet": "7 out of 10 Indians got scammed by fake tech support? Waah! Meanwhile Microsoft, Google sab ke servers India mein hai but scammer protection nahi. ₹500 recharge kar dete hain but ₹5000 scam se bachne ka jugaad nahi. Big Tech ka India strategy: Data lelo, security chhodo! #TechSca",
+      "tweet": "",
       "status": "pending",
-      "slot_index": 0,
-      "slot_label": "11 AM IST",
-      "utc_hour": 5,
-      "utc_min": 30,
-      "message_id": 3
+      "slot_label": null,
+      "message_id": 188
     },
     {
-      "topic": "Forecasting the rise of push payment scams—the fraud consumers are tricked into authorizing",
-      "tweet": "Push payments = aapka paisa, unki marzi! Banks made it instant toh scammers made it invisible. You authorize, money vanishes, bank says sorry sir, you only clicked. ₹50,000 gone in 2 seconds but refund takes 90 days. Convenience for whom exactly? #PushPaymentScam #UPIFraud #Digit",
+      "topic": "Supply-chain scam: Ahmedabad police dismantle gadget-swapping interstate syndicate",
+      "tweet": "",
       "status": "pending",
-      "slot_index": 1,
-      "slot_label": "1 PM IST",
-      "utc_hour": 7,
-      "utc_min": 30,
-      "message_id": 4
+      "slot_label": null,
+      "message_id": 189
     },
     {
-      "topic": "Amazon Great Indian Festival 2025: Deals on Smartphones, Laptops and more - Hidden traps and real savings",
-      "tweet": "Amazon's Great Indian Festival again! Same phones at 70% off from inflated MRPs, laptops with fake discounts, and exchange offers that lowball your device. Plus those sneaky no-cost EMI charges they don't mention upfront. Aam aadmi gets excited, Jeff Bezos gets richer. #AmazonSal",
+      "topic": "India’s Telecom Subscribers Reach 1.31 Billion; Jio, Airtel Dominate",
+      "tweet": "",
       "status": "pending",
-      "slot_index": 2,
-      "slot_label": "5 PM IST",
-      "utc_hour": 11,
-      "utc_min": 30,
-      "message_id": 5
+      "slot_label": null,
+      "message_id": 190
     },
     {
-      "topic": "Consumer Affairs Ministry probes Flipkart and Amazon over dark patterns - What you need to know before buying",
-      "tweet": "Flipkart Amazon dark patterns probe? Finally someone noticed their Only 1 left! drama when there's actually 500 in stock. Bhai, ye companies hamko bewakoof samjhte hain with fake urgency and hidden charges. Will this probe actually change anything or just another govt showoff? #D",
+      "topic": "SBI warns customers: Scammers are sending fake 'bank letters' with these app links",
+      "tweet": "",
       "status": "pending",
-      "slot_index": 3,
-      "slot_label": "9 PM IST",
-      "utc_hour": 15,
-      "utc_min": 30,
-      "message_id": 6
+      "slot_label": null,
+      "message_id": 191
+    },
+    {
+      "topic": "How safe are you from fraud during Amazon and Flipkart's Republic Day sales, and can cyber insurance...",
+      "tweet": "",
+      "status": "pending",
+      "slot_label": null,
+      "message_id": 192
+    },
+    {
+      "topic": "Nothing Phone 4a Series London Event: Hands-On with the 4a Pro",
+      "tweet": "",
+      "status": "pending",
+      "slot_label": null,
+      "message_id": 193
     }
   ],
-  "generated_at": "2026-03-26T10:54:30.731801",
-  "date": "2026-03-26",
   "slots": [
     {
       "label": "11 AM IST",
@@ -64,5 +92,7 @@
       "utc_hour": 15,
       "utc_min": 30
     }
-  ]
+  ],
+  "date": "2026-03-27",
+  "approved_count": 0
 }
