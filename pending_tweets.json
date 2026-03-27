@@ -1,104 +1,104 @@
 {
   "tweets": [
     {
-      "topic": "सोशल लिस्ट: Flipkart Big Billion Days और Amazon Great Indian Festival Sale को Scam कह रहे हैं लोग? | The Lallantop",
-      "tweet": "Flipkart Big Billion Days aur Amazon Great Indian Festival sales ko kaafi log ab 'scam' keh rahe hain, jahan discounts sirf naam ke",
+      "topic": "How safe are you from fraud during Amazon and Flipkart's Republic Day sales, and can cyber insurance...",
+      "tweet": "Amazon aur Flipkart ki Republic Day sales mein cyber fraud ke cases",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 229
+      "message_id": 240
     },
     {
-      "topic": "Internet subscribers in India grew 1.1 pc in October-December 2025 quarter: TRAI",
-      "tweet": "TRAI ke mutabik, October-December 2025 quarter mein India ke internet subscribers 1.1% badh gaye hain. Toh",
+      "topic": "Starlink, Jio, Airtel face further delay in satellite internet rollout amid TRAI–DoT standoff",
+      "tweet": "Starlink, Jio aur Airtel ka satellite internet rollout TRAI-DoT ke",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 230
+      "message_id": 241
     },
     {
-      "topic": "SBI warns customers: Scammers are sending fake 'bank letters' with these app links",
-      "tweet": "SBI ne warn kiya hai ki scammers fake 'bank letters' bhej rahe hain jinmein malicious app links hain. Ab humein har ₹100",
+      "topic": "Delhi Delivery Agent Defrauds Amazon, Flipkart, Used To Return Old Items",
+      "tweet": "Delhi ke ek delivery agent ne Amazon aur Flipkart ko purane items",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 231
+      "message_id": 242
+    },
+    {
+      "topic": "Samsung Galaxy S26 vs iPhone 17: Price in India, Specifications and Features Compared",
+      "tweet": "Samsung Galaxy S26 aur iPhone 17 ke prices, specs aur",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 243
+    },
+    {
+      "topic": "Ai+ Pulse 2 launches at ₹5,999 with 6,000mAh battery, 50MP camera",
+      "tweet": "Ai+ Pulse 2 ne launch kiya hai ₹5,999",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 244
     },
     {
       "topic": "Beware of Online Scams During Flipkart Big Billion Days, Amazon Great Indian Festival & Other Festive Sales",
-      "tweet": "Online festive sales jaise Flipkart Big Billion Days aur Amazon Great Indian Festival ke dauran cyber fraud se consumers ₹500 crore se zyada gawa dete",
+      "tweet": "Pichle saal festive sales mein online scams ki vajah se consumers ne",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 232
-    },
-    {
-      "topic": "India smartphone market surges 8% on-year by value in 2025, led by Apple, Samsung: Counterpoint",
-      "tweet": "India smartphone market 2025 mein 8% on-year value surge karega, Apple aur Samsung is growth ko lead kar rahe hain as per Counterpoint. Toh kya ab humein ₹1 lakh ke phone ₹80,000 mein milenge, ya ₹80,000 wale ₹1 lakh mein? Consumer ko value kab milegi? #Smartphones #IndianTech",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 233
-    },
-    {
-      "topic": "Scams don’t stop at telecom: India needs platform-neutral communication rules",
-      "tweet": "India mein online scams ab telecom se nikal kar messaging apps aur social media tak फैल गए हैं, jahan ₹1000 crore se zyada",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 234
-    },
-    {
-      "topic": "Samsung Galaxy S26, Galaxy S26+ and Galaxy S26 Ultra India price announced: Pre-order offers, availabilit",
-      "tweet": "Samsung ne Galaxy S26 series (S26, S26+, S26 Ultra) ki India prices announce kar di hain, starting",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 235
+      "message_id": 245
     },
     {
       "topic": "Jio offers to install neutral telecom infra in underground Metro 3; Airtel and Vi back it",
-      "tweet": "Jio ne Mumbai Metro 3 ke underground sections mein neutral telecom infrastructure install karne ka offer diya hai, jise Airtel aur Vi bhi support kar rahe hain",
+      "tweet": "Jio Metro 3 ki underground tunnels mein neutral telecom infra install karega",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 236
+      "message_id": 246
     },
     {
-      "topic": "Govt plans new smartphone export incentives in a boost for Apple, Samsung",
-      "tweet": "Govt ne Apple aur Samsung jaise smartphone brands ke liye naye export incentives plan kiye hain. Ab dekho, phones India mein banenge, par",
+      "topic": "Vivo Y21 5G and Vivo Y11 5G Launched in India with 6,500mAh Batteries, Dimensity 6300 Chipset",
+      "tweet": "Vivo Y21 5G aur Y11 5G",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 237
+      "message_id": 247
     },
     {
-      "topic": "Jio, Airtel, Vi unite, flag Mumbai Metro 3 IBS tender, offer buyout",
-      "tweet": "Jio, Airtel aur Vi ne Mumbai Metro 3 ke In-Building Solutions (IBS) tender ko challenge kiya hai aur ab buyout offer",
+      "topic": "DoT’s Draft Rules Mandate Authorisation for IXPs, Skip TRAI’s Content Blocking Clause",
+      "tweet": "DoT ne draft rules mein IXPs ke liye authorization compulsory kar diya hai,",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 238
+      "message_id": 248
+    },
+    {
+      "topic": "28-Day Recharge Plans Under scrutiny: 13 recharges a year strategy by Airtel, Jio, Vi faces govt action",
+      "tweet": "Airtel, Jio aur Vi ke 28-din ke recharge plans",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 249
     }
   ],
   "slots": [
@@ -124,6 +124,6 @@
     }
   ],
   "date": "2026-03-27",
-  "generated_at": "2026-03-27T06:51:05.028038",
+  "generated_at": "2026-03-27T07:32:05.025519",
   "approved_count": 0
 }
