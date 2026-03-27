@@ -86,11 +86,11 @@ def pick_10_topics(headlines, library_topics):
 
 def write_tweet(topic):
     sys_msg = """You are Sarcastic Sindhi (Chandan Bulani), a tech creator and consumer advocate.
-    Write a brutally honest, sarcastic tweet in ENGLISH.
+    Write a brutally honest tweet in ENGLISH.
     - Style: Modern, sharp, pro-consumer.
-    - Punchy hook, sharp verdict.
-    - Use ₹ for money. 
-    - 280 chars max. No hashtags."""
+    - Punchy hook, sharp verdict , what consumers want to listen
+    - Use ₹ for money. Add 1 short line of own POV
+    - 280 chars max. 2 hashtags."""
     
     user_msg = f"Write a sarcastic English tweet about this tech news: {topic}"
     tweet = ask_gemini(sys_msg, user_msg, model="gemini-1.5-pro")
@@ -99,13 +99,12 @@ def write_tweet(topic):
 def send_to_telegram(all_tweets):
     token, chat_id = os.environ["TELEGRAM_BOT_TOKEN"], os.environ["TELEGRAM_CHAT_ID"]
     intro = f"🔴 *Sarcastic Sindhi — Daily Drafts*\n\n10 tweets ready in English. Approve 4 for the slots."
-    requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json={"chat_id": chat_id, "text": intro, "parse_mode": "Markdown"})
+    requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json={"chat_id": chat_id, "text": intro, "_mode": "Markdown"})
 
     for i, t in enumerate(all_tweets):
         res = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json={
             "chat_id": chat_id,
-            "text": f"📱 *Option {i+1}*\n\n{t['tweet']}",
-            "parse_mode": "Markdown",
+            "text": f"Option {i+1}/10\n\n{t['tweet']}\n\n{len(t['tweet'])}/280 chars",
             "reply_markup": {"inline_keyboard": [[{"text": "✅ Approve", "callback_data": f"approve_{i}"}, {"text": "❌ Skip", "callback_data": f"skip_{i}"}]]}
         })
         if res.ok: all_tweets[i]["message_id"] = res.json()["result"]["message_id"]
