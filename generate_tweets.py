@@ -110,19 +110,18 @@ SENTENCE 2: Your sarcastic consumer POV — what this means for the reader. Must
 STRICT RULES:
 - Both sentences MUST be complete — never cut off mid-sentence
 - Total length: 200-260 characters including hashtags
-- Language: Hinglish in Roman script only — NO Devanagari (no हिंदी script)
-- Mix Hindi words written in English with English words naturally
+- Pure English — no Hindi words at all
 - Use rupee symbol ₹ for all prices
 - End with exactly 2 relevant hashtags
 - Output ONLY the tweet, no explanation, no quotes
 
 GOOD EXAMPLE:
-OnePlus 15T launch hua ₹49,999 mein 7500mAh battery ke saath. Itni badi battery ke baad bhi agar phone slow hai toh bhai, kharcha kahan gaya? #OnePlus #IndianTech
+OnePlus 15T launched in India at ₹49,999 with a massive 7500mAh battery. Finally a phone that won't die before your workday ends — but will your wallet survive? #OnePlus #IndianTech
 
 BAD EXAMPLE (incomplete sentence):
 Samsung ne Galaxy S26 series ki India prices announce kar di hain, starting"""
 
-    user_msg = f"Write a complete 2-sentence Hinglish tweet about this India tech news: {topic}"
+    user_msg = f"Write a complete 2-sentence English tweet about this India tech news: {topic}"
     tweet = ask_gemini(sys_msg, user_msg)
     tweet = tweet.strip().strip('"').strip("'")
 
