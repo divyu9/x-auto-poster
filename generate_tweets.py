@@ -36,7 +36,7 @@ def gh_put(filename, payload, sha, message):
     res = requests.put(f"https://api.github.com/repos/{repo}/contents/{filename}", json=body, headers=gh_headers())
     return res.ok
 
-def ask_gemini(system_prompt, user_prompt, model="gemini-2.0-flash"):
+def ask_gemini(system_prompt, user_prompt, model="gemini-2.5-flash"):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={os.environ['GEMINI_API_KEY']}"
     payload = {
         "contents": [{"parts": [{"text": f"SYSTEM: {system_prompt}\nUSER: {user_prompt}"}]}],
@@ -89,7 +89,7 @@ def pick_10_topics(headlines, library_topics):
         f'["topic1", "topic2", "topic3", "topic4", "topic5", "topic6", "topic7", "topic8", "topic9", "topic10"]'
     )
 
-    raw = ask_gemini(sys_msg, user_msg, model="gemini-2.0-flash")
+    raw = ask_gemini(sys_msg, user_msg, model="gemini-2.5-flash")
     try:
         clean = raw.replace("```json", "").replace("```", "").strip()
         start = clean.index("[")
@@ -115,7 +115,7 @@ VOICE RULES — zaroor follow karo:
 OUTPUT: SIRF tweet text. 280 chars se kam. 2-3 hashtags end mein. Quotes mat lagao."""
 
     user_msg = f"Is India tech news pe ek sarcastic consumer-POV Hinglish tweet likho: {topic}"
-    tweet = ask_gemini(sys_msg, user_msg, model="gemini-2.0-flash")
+    tweet = ask_gemini(sys_msg, user_msg, model="gemini-2.5-flash")
     tweet = tweet.strip().strip('"').strip("'")
     return tweet[:280] if len(tweet) > 280 else tweet
 
