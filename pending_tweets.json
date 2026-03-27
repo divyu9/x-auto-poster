@@ -1,104 +1,104 @@
 {
   "tweets": [
     {
-      "topic": "Jio, Airtel, Vi unite, flag Mumbai Metro 3 IBS tender, offer buyout",
-      "tweet": "Jio, Airtel, Vi ki dosti? Bhai, ye toh seedha-seedha cartel hai! Mumbai Metro 3 IBS tender buyout offer? Samaj",
+      "topic": "सोशल लिस्ट: Flipkart Big Billion Days और Amazon Great Indian Festival Sale को Scam कह रहे हैं लोग? | The Lallantop",
+      "tweet": "Flipkart Big Billion Days aur Amazon Great Indian Festival sales ko kaafi log ab 'scam' keh rahe hain, jahan discounts sirf naam ke",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 218
-    },
-    {
-      "topic": "Beware of Online Scams During Flipkart Big Billion Days, Amazon Great Indian Festival & Other Festive Sales",
-      "tweet": "Yaar sun, yeh 'deals' nahi, seedha jeb ka scam hai! Flipkart Big Billion Days, Amazon Great Indian Festival? ₹1 discount dik",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 219
-    },
-    {
-      "topic": "India’s Telecom Subscribers Reach 1.31 Billion; Jio, Airtel Dominate",
-      "tweet": "Bhai seriously, 1.31 Billion subscribers? Wah! Jio-Airtel ka raj hai, par customer ko kya mila? Better service?",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 220
-    },
-    {
-      "topic": "Govt plans new smartphone export incentives in a boost for Apple, Samsung",
-      "tweet": "Wah re sarkar! Apple, Samsung ko export incentives? Bhai seriously, humare liye toh abhi bhi iPhone ₹1,00,00",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 221
-    },
-    {
-      "topic": "DoT’s Draft Rules Mandate Authorisation for IXPs, Skip TRAI’s Content Blocking Clause",
-      "tweet": "Lo bhai, DoT ki nayi kahani. IXP authorisation? Matlab aur paperwork, aur control. Bhai seriously, isse internet speed bad",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 222
+      "message_id": 229
     },
     {
       "topic": "Internet subscribers in India grew 1.1 pc in October-December 2025 quarter: TRAI",
-      "tweet": "Bhai seriously, TRAI bol raha internet subscribers 1.1% badhe. Wah! Matlab, Jio-Airtel ne fir ₹5",
+      "tweet": "TRAI ke mutabik, October-December 2025 quarter mein India ke internet subscribers 1.1% badh gaye hain. Toh",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 223
+      "message_id": 230
     },
     {
-      "topic": "Supply-chain scam: Ahmedabad police dismantle gadget-swapping interstate syndicate",
-      "tweet": "",
+      "topic": "SBI warns customers: Scammers are sending fake 'bank letters' with these app links",
+      "tweet": "SBI ne warn kiya hai ki scammers fake 'bank letters' bhej rahe hain jinmein malicious app links hain. Ab humein har ₹100",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 224
+      "message_id": 231
+    },
+    {
+      "topic": "Beware of Online Scams During Flipkart Big Billion Days, Amazon Great Indian Festival & Other Festive Sales",
+      "tweet": "Online festive sales jaise Flipkart Big Billion Days aur Amazon Great Indian Festival ke dauran cyber fraud se consumers ₹500 crore se zyada gawa dete",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 232
+    },
+    {
+      "topic": "India smartphone market surges 8% on-year by value in 2025, led by Apple, Samsung: Counterpoint",
+      "tweet": "India smartphone market 2025 mein 8% on-year value surge karega, Apple aur Samsung is growth ko lead kar rahe hain as per Counterpoint. Toh kya ab humein ₹1 lakh ke phone ₹80,000 mein milenge, ya ₹80,000 wale ₹1 lakh mein? Consumer ko value kab milegi? #Smartphones #IndianTech",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 233
+    },
+    {
+      "topic": "Scams don’t stop at telecom: India needs platform-neutral communication rules",
+      "tweet": "India mein online scams ab telecom se nikal kar messaging apps aur social media tak फैल गए हैं, jahan ₹1000 crore se zyada",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 234
+    },
+    {
+      "topic": "Samsung Galaxy S26, Galaxy S26+ and Galaxy S26 Ultra India price announced: Pre-order offers, availabilit",
+      "tweet": "Samsung ne Galaxy S26 series (S26, S26+, S26 Ultra) ki India prices announce kar di hain, starting",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 235
     },
     {
       "topic": "Jio offers to install neutral telecom infra in underground Metro 3; Airtel and Vi back it",
-      "tweet": "",
+      "tweet": "Jio ne Mumbai Metro 3 ke underground sections mein neutral telecom infrastructure install karne ka offer diya hai, jise Airtel aur Vi bhi support kar rahe hain",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 225
+      "message_id": 236
     },
     {
-      "topic": "OnePlus 15T with 7,500mAh battery, Snapdragon 8 Elite Gen 5 SoC, and 50MP cameras is now official in China",
-      "tweet": "",
+      "topic": "Govt plans new smartphone export incentives in a boost for Apple, Samsung",
+      "tweet": "Govt ne Apple aur Samsung jaise smartphone brands ke liye naye export incentives plan kiye hain. Ab dekho, phones India mein banenge, par",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 226
+      "message_id": 237
     },
     {
-      "topic": "Airtel vs Jio: How India’s telecom market became a duopoly",
-      "tweet": "",
+      "topic": "Jio, Airtel, Vi unite, flag Mumbai Metro 3 IBS tender, offer buyout",
+      "tweet": "Jio, Airtel aur Vi ne Mumbai Metro 3 ke In-Building Solutions (IBS) tender ko challenge kiya hai aur ab buyout offer",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 227
+      "message_id": 238
     }
   ],
   "slots": [
@@ -124,6 +124,6 @@
     }
   ],
   "date": "2026-03-27",
-  "generated_at": "2026-03-27T06:38:03.491064",
+  "generated_at": "2026-03-27T06:51:05.028038",
   "approved_count": 0
 }
