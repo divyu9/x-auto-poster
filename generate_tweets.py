@@ -3,6 +3,7 @@ import json
 import base64
 import feedparser
 import requests
+import time
 from datetime import datetime
 
 SLOTS = [
@@ -177,6 +178,7 @@ def main():
         print(f"Writing tweet {i+1}/10: {topic[:50]}...")
         tweet = write_tweet(topic)
         print(f"  → {tweet[:60]}...")
+        time.sleep(10)
         all_tweets.append({
             "topic": topic,
             "tweet": tweet,
