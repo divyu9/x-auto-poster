@@ -2,8 +2,10 @@ name: Daily X Post - Sarcastic Sindhi
 
 on:
   schedule:
-    - cron: '30 2 * * *'
-    - cron: '*/15 3-16 * * *'
+    - cron: '30 2 * * *'   # 8:00 AM IST — generate tweets
+    - cron: '30 7 * * *'   # 1:00 PM IST — post slot 2
+    - cron: '30 11 * * *'  # 5:00 PM IST — post slot 3
+    - cron: '30 15 * * *'  # 9:00 PM IST — post slot 4
   workflow_dispatch:
     inputs:
       mode:
@@ -18,11 +20,11 @@ on:
 
 permissions:
   contents: write
-  
+
 jobs:
   tweet_job:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repo
@@ -44,7 +46,7 @@ jobs:
           MANUAL="${{ inputs.mode }}"
           if [ -n "$MANUAL" ]; then
             echo "mode=$MANUAL" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" = "02" ] && [ "$MIN" -ge "25" ] && [ "$MIN" -le "45" ]; then
+          elif [ "$HOUR" = "02" ]; then
             echo "mode=generate" >> $GITHUB_OUTPUT
           else
             echo "mode=check" >> $GITHUB_OUTPUT
@@ -53,8 +55,8 @@ jobs:
       - name: Generate 10 tweets (8 AM IST)
         if: steps.mode.outputs.mode == 'generate'
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
