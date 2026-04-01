@@ -1,113 +1,113 @@
 {
   "tweets": [
     {
-      "topic": "Scams don’t stop at telecom: India needs platform-neutral communication rules",
-      "tweet": "India's telecom regulator pushed for platform-neutral communication rules to combat rising scams across all messaging services. Seems like WhatsApp, Telegram, and Signal finally get treated like telephones—only took countless fraud victims to make that happen.",
+      "topic": "$400 million Coinbase scam: What role did THIS Indian call centre play in the company's biggest-ever fraud?",
+      "tweet": "Coinbase lost $400 million to fraudsters allegedly linked to an Indian call centre operating fake support schemes. So while you're worried about your crypto gains, scammers with a local phone number are busy emptying entire wallets. #CryptoFraud #IndianTech",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 273,
+      "message_id": 292,
       "instant": false
     },
     {
-      "topic": "$400 million Coinbase scam: What role did THIS Indian call centre play in the company's biggest-ever fraud?",
-      "tweet": "Coinbase fell victim to a ₹3,300 crore fraud orchestrated by an Indian call centre that deceived employees into transferring company funds. Turns out even crypto companies aren't immune to good old-fashioned social engineering — your security is only as strong as the person an...",
+      "topic": "How safe are you from fraud during Amazon and Flipkart's Republic Day sales, and can cyber insurance...",
+      "tweet": "Amazon and Flipkart's Republic Day sales see fraud cases spike by 40 percent, with cyber insurance covering only ₹5 lakh on average. Your dream deal might cost you your peace of mind — because thieves love a good sale too. #CyberSecurity #IndianEcommerce",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 274,
+      "message_id": 293,
+      "instant": false
+    },
+    {
+      "topic": "Delhi Delivery Agent Defrauds Amazon, Flipkart, Used To Return Old Items",
+      "tweet": "Delhi delivery agent arrested for returning old, defective items to Amazon and Flipkart instead of genuine products, defrauding both platforms of lakhs.",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 294,
+      "instant": false
+    },
+    {
+      "topic": "India smartphone market surges 8% on-year by value in 2025, led by Apple, Samsung: Counterpoint",
+      "tweet": "India smartphone market grew 8% year-on-year by value in 2025, with Apple and Samsung leading the charge. Looks like Indians are finally willing to pay premium prices instead of hunting for budget deals. #IndianTech #Smartphones",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 295,
+      "instant": false
+    },
+    {
+      "topic": "Vivo T5x price hiked by Rs 2,000 just weeks after India launch",
+      "tweet": "Vivo T5x just got a ₹2,000 price hike weeks after launching in India — because apparently the phone's performance improved overnight. So much for \"launch pricing,\" now you're paying premium rates for the same device you could've grabbed cheaper last month. #Vivo #IndianTech",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 296,
+      "instant": false
+    },
+    {
+      "topic": "Infinix Note 60 Pro 5G tipped to launch in India soon; key specs and expected pricing revealed",
+      "tweet": "Infinix Note 60 Pro 5G is coming to India with flagship specs and budget pricing that'll make other brands sweat. Finally, someone remembered that 5G phones don't need to cost more than a used car. #Infinix #IndianTech",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 297,
       "instant": false
     },
     {
       "topic": "Xiaomi 17 vs Samsung Galaxy S26 vs iPhone 17: Price in India, Specifications and Features Compared",
-      "tweet": "Xiaomi 17 starts at ₹28,999, Samsung Galaxy S26 at ₹54,999, and iPhone 17 at ₹79,999 with varying specs and features. Pick your poison based on budget — flagship performance or flagship prices, Indians always choose the best value for money. #SmartphoneShowdown #IndianTech",
+      "tweet": "Xiaomi 17 starts at ₹35,999, Samsung Galaxy S26 at ₹52,999, and iPhone 17 at ₹79,999 — specs are closer than ever. Pick your poison based on budget, because flagship features have finally become democratic. #IndianTech #SmartphoneWars",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 275,
+      "message_id": 298,
       "instant": false
     },
     {
-      "topic": "Smartphones India’s top export with $30 billion shipments- Apple, Samsung key drivers",
-      "tweet": "Smartphones became India's top export at $30 billion shipments, with Apple and Samsung leading the charge. Turns out we're not just consuming tech — we're building the devices the world actually wants. #MakeInIndia #TechExport",
+      "topic": "Lava Bold N2 Lite Entry-Level Smartphone Launched in India: Check Price & Specifications",
+      "tweet": "Lava Bold N2 Lite launched in India as an ultra-budget smartphone with basic specs at an affordable price point. Finally a phone for those who just need calls and texts without burning a hole in their pocket. #LavaPhones #BudgetTech",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 276,
+      "message_id": 299,
       "instant": false
     },
     {
-      "topic": "7 in 10 consumers in India encountered tech support scams last year, highest globally: Microsoft",
-      "tweet": "Microsoft data reveals 7 out of 10 Indian consumers fell victim to tech support scams last year—the worst globally. Guess we're leading in something, just not the way we wanted to. #CyberSecurity #IndianTech",
+      "topic": "Jio, Airtel, Vi pitch common infra model to fix Mumbai Metro network blackout",
+      "tweet": "Jio, Airtel, and Vi proposed a shared infrastructure model to resolve Mumbai Metro's network blackout issue. Looks like telecom giants finally realized cooperation beats competition when commuters can't even call for help underground. #TelecomIndia #MumbaiMetro",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 277,
+      "message_id": 300,
       "instant": false
     },
     {
-      "topic": "Samsung Brings iPhone-Style Upgrade Plan To India: Get The Samsung Galaxy S26 Ultra At Half Its Price",
-      "tweet": "Samsung Galaxy S26 Ultra now available at half price through their new upgrade plan in India. Finally, flagship phones won't require selling a kidney — just your old device and some monthly payments. #Samsung #IndianTech",
+      "topic": "Xiaomi, Oppo, Realme, OnePlus see first India revenue drop as premium shift aids Apple, Samsung: Report",
+      "tweet": "Xiaomi, Oppo, Realme, and OnePlus reported their first revenue decline in India as customers shift to premium brands Apple and Samsung. Looks like budget phone dominance is finally cracking — turns out Indians do want that shiny Apple logo after all. #IndianTech #Smartphones",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 278,
-      "instant": false
-    },
-    {
-      "topic": "RBI acts tough against cyber frauds, directs all banks to use DoT’s FRI technology to protect bank custome",
-      "tweet": "RBI mandates all Indian banks to adopt DoT's FRI technology to combat cyber fraud and protect customer accounts. Your bank finally gets serious about security — let's hope they implement it before hackers do. #Cybersecurity #BankingSafety",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 279,
-      "instant": false
-    },
-    {
-      "topic": "Govt plans new smartphone export incentives in a boost for Apple, Samsung",
-      "tweet": "Government announces new smartphone export incentives targeting Apple and Samsung manufacturing in India. Great news for factory workers, but your phone prices won't drop anytime soon—corporations always keep the savings. #IndianTech #MakeInIndia",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 280,
-      "instant": false
-    },
-    {
-      "topic": "Not frequently checking Amazon and Flipkart accounts? Credit fraud misusing unused e-commerce accounts",
-      "tweet": "Amazon and Flipkart accounts left dormant for months are becoming honeypots for credit card fraud and unauthorized purchases. Time to dust off those forgotten logins before scammers turn your unused account into their personal shopping mall. #CyberSecurity #IndianEcommerce",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 281,
-      "instant": false
-    },
-    {
-      "topic": "Supply-chain scam: Ahmedabad police dismantle gadget-swapping interstate syndicate",
-      "tweet": "Ahmedabad police busted an interstate gadget-swapping syndicate that was duping consumers with fake supply chains. So those \"sealed\" boxes you bought might've contained someone else's returned junk — welcome to Indian e-commerce reality. #TechScam #ConsumerAlert",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 282,
+      "message_id": 301,
       "instant": false
     }
   ],
@@ -134,6 +134,6 @@
     }
   ],
   "date": "2026-04-01",
-  "generated_at": "2026-04-01T16:57:41.414503",
+  "generated_at": "2026-04-01T17:16:57.610808",
   "approved_count": 0
 }
