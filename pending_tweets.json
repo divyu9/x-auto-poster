@@ -1,113 +1,113 @@
 {
   "tweets": [
     {
+      "topic": "Scams don’t stop at telecom: India needs platform-neutral communication rules",
+      "tweet": "India's telecom regulator pushed for platform-neutral communication rules to combat rising scams across all messaging services. Seems like WhatsApp, Telegram, and Signal finally get treated like telephones—only took countless fraud victims to make that happen.",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 273,
+      "instant": false
+    },
+    {
+      "topic": "$400 million Coinbase scam: What role did THIS Indian call centre play in the company's biggest-ever fraud?",
+      "tweet": "Coinbase fell victim to a ₹3,300 crore fraud orchestrated by an Indian call centre that deceived employees into transferring company funds. Turns out even crypto companies aren't immune to good old-fashioned social engineering — your security is only as strong as the person an...",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 274,
+      "instant": false
+    },
+    {
+      "topic": "Xiaomi 17 vs Samsung Galaxy S26 vs iPhone 17: Price in India, Specifications and Features Compared",
+      "tweet": "Xiaomi 17 starts at ₹28,999, Samsung Galaxy S26 at ₹54,999, and iPhone 17 at ₹79,999 with varying specs and features. Pick your poison based on budget — flagship performance or flagship prices, Indians always choose the best value for money. #SmartphoneShowdown #IndianTech",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 275,
+      "instant": false
+    },
+    {
+      "topic": "Smartphones India’s top export with $30 billion shipments- Apple, Samsung key drivers",
+      "tweet": "Smartphones became India's top export at $30 billion shipments, with Apple and Samsung leading the charge. Turns out we're not just consuming tech — we're building the devices the world actually wants. #MakeInIndia #TechExport",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 276,
+      "instant": false
+    },
+    {
+      "topic": "7 in 10 consumers in India encountered tech support scams last year, highest globally: Microsoft",
+      "tweet": "Microsoft data reveals 7 out of 10 Indian consumers fell victim to tech support scams last year—the worst globally. Guess we're leading in something, just not the way we wanted to. #CyberSecurity #IndianTech",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 277,
+      "instant": false
+    },
+    {
+      "topic": "Samsung Brings iPhone-Style Upgrade Plan To India: Get The Samsung Galaxy S26 Ultra At Half Its Price",
+      "tweet": "Samsung Galaxy S26 Ultra now available at half price through their new upgrade plan in India. Finally, flagship phones won't require selling a kidney — just your old device and some monthly payments. #Samsung #IndianTech",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 278,
+      "instant": false
+    },
+    {
+      "topic": "RBI acts tough against cyber frauds, directs all banks to use DoT’s FRI technology to protect bank custome",
+      "tweet": "RBI mandates all Indian banks to adopt DoT's FRI technology to combat cyber fraud and protect customer accounts. Your bank finally gets serious about security — let's hope they implement it before hackers do. #Cybersecurity #BankingSafety",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 279,
+      "instant": false
+    },
+    {
+      "topic": "Govt plans new smartphone export incentives in a boost for Apple, Samsung",
+      "tweet": "Government announces new smartphone export incentives targeting Apple and Samsung manufacturing in India. Great news for factory workers, but your phone prices won't drop anytime soon—corporations always keep the savings. #IndianTech #MakeInIndia",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 280,
+      "instant": false
+    },
+    {
+      "topic": "Not frequently checking Amazon and Flipkart accounts? Credit fraud misusing unused e-commerce accounts",
+      "tweet": "Amazon and Flipkart accounts left dormant for months are becoming honeypots for credit card fraud and unauthorized purchases. Time to dust off those forgotten logins before scammers turn your unused account into their personal shopping mall. #CyberSecurity #IndianEcommerce",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 281,
+      "instant": false
+    },
+    {
       "topic": "Supply-chain scam: Ahmedabad police dismantle gadget-swapping interstate syndicate",
-      "tweet": "Ahmedabad police busted an interstate gadget-swapping syndicate that was duping consumers across India with fake devices. So your \"new\" phone might actually be someone else's refurbished nightmare — trust no one selling tech on the streets. #FraudAlert #IndianTech",
+      "tweet": "Ahmedabad police busted an interstate gadget-swapping syndicate that was duping consumers with fake supply chains. So those \"sealed\" boxes you bought might've contained someone else's returned junk — welcome to Indian e-commerce reality. #TechScam #ConsumerAlert",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 262,
-      "instant": false
-    },
-    {
-      "topic": "SBI warns customers: Scammers are sending fake 'bank letters' with these app links",
-      "tweet": "SBI issued a warning that scammers are distributing fraudulent bank letters containing malicious app links to steal customer credentials. Looks like your inbox just became a minefield — delete first, think later, because your bank account depends on it.",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 263,
-      "instant": false
-    },
-    {
-      "topic": "How safe are you from fraud during Amazon and Flipkart's Republic Day sales, and can cyber insurance...",
-      "tweet": "Amazon and Flipkart's Republic Day sales expose millions to fraud risks, but cyber insurance policies remain expensive and poorly understood by most Indians. Your ₹50,000 shopping spree could vanish in seconds — and recovery takes months if your insurance even covers it.",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 264,
-      "instant": false
-    },
-    {
-      "topic": "Ai+ Pulse 2 launches at ₹5,999 with 6,000mAh battery, 50MP camera",
-      "tweet": "AI+ Pulse 2 launched in India at ₹5,999 featuring a 6,000mAh battery and 50MP camera for budget buyers. Finally a decent phone under ₹6,000 that won't make you choose between battery life and decent photos. #BudgetTech #IndianTech",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 265,
-      "instant": false
-    },
-    {
-      "topic": "OnePlus 15T Launched With 7,500mAh Battery, Dual 50-Megapixel Cameras: Price, Specifications",
-      "tweet": "OnePlus 15T launched in India at ₹49,999 with a massive 7500mAh battery and dual 50MP cameras. Finally a phone that won't die before your workday ends — but will your wallet survive? #OnePlus #IndianTech",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 266,
-      "instant": false
-    },
-    {
-      "topic": "Jio offers to install neutral telecom infra in underground Metro 3; Airtel and Vi back it",
-      "tweet": "Jio proposes installing neutral telecom infrastructure in Mumbai's Metro 3 underground, with Airtel and Vi supporting the initiative. Finally, our metro commutes might have actual 4G coverage instead of watching the loading spinner for 20 minutes. #Jio #IndianTelecom",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 267,
-      "instant": false
-    },
-    {
-      "topic": "Revealed: Real reason why mobile data in India is cheaper than Pakistan, China, more details inside",
-      "tweet": "Mobile data in India costs ₹0.26 per GB, making it the cheapest globally compared to Pakistan's ₹1.2 and China's ₹0.89 per GB. Indian telecom competition is ruthless, but remember you're paying for it with constant ads and data throttling. #IndianTelecom #DataWars",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 268,
-      "instant": false
-    },
-    {
-      "topic": "Internet subscribers in India grew 1.1% in October-December 2025 quarter: TRAI",
-      "tweet": "Internet subscribers in India grew 1.1% in the October-December 2025 quarter, reaching record numbers according to TRAI data. Congrats on the slowest growth rate ever — at this pace, we'll have universal internet access by 2047. #IndianTelecom #DigitalIndia",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 269,
-      "instant": false
-    },
-    {
-      "topic": "Internet subscribers in India grew 1.1 pc in October-December 2025 quarter: TRAI",
-      "tweet": "Internet subscribers in India grew 1.1% in the October-December 2025 quarter according to TRAI data. Growth is slowing down because most Indians already have internet access — now the real challenge is keeping them connected with affordable plans. #IndianTelecom #TRAIReport",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 270,
-      "instant": false
-    },
-    {
-      "topic": "Vivo Y21 5G and Vivo Y11 5G Launched in India with 6,500mAh Batteries, Dimensity 6300 Chipset",
-      "tweet": "Vivo Y21 5G and Y11 5G launched in India with massive 6,500mAh batteries and Dimensity 6300 chipset. Budget 5G phones that actually last all day — finally Vivo gets it right for everyday users. #Vivo5G #IndianTech",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 271,
+      "message_id": 282,
       "instant": false
     }
   ],
@@ -133,7 +133,7 @@
       "utc_min": 30
     }
   ],
-  "date": "2026-03-27",
-  "generated_at": "2026-03-27T08:51:58.845426",
+  "date": "2026-04-01",
+  "generated_at": "2026-04-01T16:57:41.414503",
   "approved_count": 0
 }
