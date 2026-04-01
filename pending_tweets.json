@@ -14,13 +14,13 @@
     {
       "topic": "How safe are you from fraud during Amazon and Flipkart's Republic Day sales, and can cyber insurance...",
       "tweet": "Amazon and Flipkart's Republic Day sales see fraud cases spike by 40 percent, with cyber insurance covering only ₹5 lakh on average. Your dream deal might cost you your peace of mind — because thieves love a good sale too. #CyberSecurity #IndianEcommerce",
-      "status": "pending",
+      "status": "posting",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
       "message_id": 293,
-      "instant": false
+      "instant": true
     },
     {
       "topic": "Delhi Delivery Agent Defrauds Amazon, Flipkart, Used To Return Old Items",
