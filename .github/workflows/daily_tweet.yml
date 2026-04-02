@@ -2,10 +2,7 @@ name: Daily X Post - Sarcastic Sindhi
 
 on:
   schedule:
-    - cron: '30 2 * * *'   # 8:00 AM IST — generate tweets
-    - cron: '30 7 * * *'   # 1:00 PM IST — post slot 2
-    - cron: '30 11 * * *'  # 5:00 PM IST — post slot 3
-    - cron: '30 15 * * *'  # 9:00 PM IST — post slot 4
+    - cron: '*/15 4-18 * * *'  # Every 15 min, 9:30 AM to 11:30 PM IST
   workflow_dispatch:
     inputs:
       mode:
@@ -41,18 +38,14 @@ jobs:
       - name: Determine mode
         id: mode
         run: |
-          HOUR=$(date -u +%H)
-          MIN=$(date -u +%M)
           MANUAL="${{ inputs.mode }}"
           if [ -n "$MANUAL" ]; then
             echo "mode=$MANUAL" >> $GITHUB_OUTPUT
-          elif [ "$HOUR" = "02" ]; then
-            echo "mode=generate" >> $GITHUB_OUTPUT
           else
             echo "mode=check" >> $GITHUB_OUTPUT
           fi
 
-      - name: Generate 10 tweets (8 AM IST)
+      - name: Generate tweets
         if: steps.mode.outputs.mode == 'generate'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -63,7 +56,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python generate_tweets.py
 
-      - name: Check approvals + post scheduled
+      - name: Check + post scheduled tweets
         if: steps.mode.outputs.mode == 'check'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -76,7 +69,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python check_approvals.py
 
-      - name: Post instant tweet (URL mode)
+      - name: Post instant tweet
         if: steps.mode.outputs.mode == 'post_instant'
         env:
           X_CONSUMER_KEY: ${{ secrets.X_CONSUMER_KEY }}
