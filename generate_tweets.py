@@ -171,9 +171,11 @@ def send_to_telegram(all_tweets):
             "chat_id": chat_id,
             "text": f"Option {i+1}/10\n\n{tweet_text}\n\n{len(tweet_text)}/280 chars",
             "reply_markup": {"inline_keyboard": [[
-                {"text": "Approve", "callback_data": f"approve_{i}"},
-                {"text": "Edit",    "callback_data": f"edit_{i}"},
-                {"text": "Skip",    "callback_data": f"skip_{i}"}
+                {"text": "🚀 Post Now",  "callback_data": f"postnow_{i}"},
+                {"text": "🕐 Schedule", "callback_data": f"sched_{i}"},
+                {"text": "✏️ Edit",     "callback_data": f"edit_{i}"},
+            ], [
+                {"text": "❌ Skip",     "callback_data": f"skip_{i}"},
             ]]}
         })
         if res.ok:
