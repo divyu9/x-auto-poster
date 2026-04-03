@@ -3,11 +3,11 @@
     {
       "topic": "India plans fresh incentives for phone production in boost for Apple, Samsung",
       "tweet": "India just announced fresh incentives to boost phone production for Apple and Samsung manufacturing. Great for factories, but don't expect cheaper iPhones anytime soon — corporations always find ways to keep prices premium. #MakeInIndia #TechPolicy",
-      "status": "pending",
+      "status": "approved",
       "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
+      "slot_label": "1:00 PM",
+      "utc_hour": 7,
+      "utc_min": 30,
       "message_id": 340,
       "instant": false
     },
@@ -80,13 +80,13 @@
     {
       "topic": "Rising Scams in India: Building Awareness and Prevention",
       "tweet": "Rising scams in India have cost citizens over ₹50,000 crores annually, with UPI fraud increasing by 300% this year. Your digital wallet is safer than your common sense — enable two-factor authentication before the scammers do it for you. #CyberSecurity #IndianTech",
-      "status": "posting",
+      "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
       "message_id": 347,
-      "instant": true
+      "instant": false
     },
     {
       "topic": "Internet subscribers in India grew 1.1% in October-December 2025 quarter: TRAI",
