@@ -80,13 +80,13 @@
     {
       "topic": "Rising Scams in India: Building Awareness and Prevention",
       "tweet": "Rising scams in India have cost citizens over ₹50,000 crores annually, with UPI fraud increasing by 300% this year. Your digital wallet is safer than your common sense — enable two-factor authentication before the scammers do it for you. #CyberSecurity #IndianTech",
-      "status": "pending",
+      "status": "posting",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
       "message_id": 347,
-      "instant": false
+      "instant": true
     },
     {
       "topic": "Internet subscribers in India grew 1.1% in October-December 2025 quarter: TRAI",
