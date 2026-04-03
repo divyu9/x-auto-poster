@@ -1,5 +1,116 @@
 {
-  "tweets": [],
+  "tweets": [
+    {
+      "topic": "India plans fresh incentives for phone production in boost for Apple, Samsung",
+      "tweet": "India just announced fresh incentives to boost phone production for Apple and Samsung manufacturing. Great for factories, but don't expect cheaper iPhones anytime soon — corporations always find ways to keep prices premium. #MakeInIndia #TechPolicy",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 340,
+      "instant": false
+    },
+    {
+      "topic": "Ai+ Pulse 2 launches at ₹5,999 with 6,000mAh battery, 50MP camera",
+      "tweet": "Ai+ Pulse 2 launches in India at ₹5,999 with a 6,000mAh battery and 50MP camera. Finally a budget phone that doesn't compromise on battery life — though don't expect flagship performance at pocket change prices. #BudgetTech #IndianPhones",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 341,
+      "instant": false
+    },
+    {
+      "topic": "How safe are you from fraud during Amazon and Flipkart's Republic Day sales, and can cyber insurance...",
+      "tweet": "Amazon and Flipkart's Republic Day sales expose millions to fraud risks, yet cyber insurance remains expensive at ₹5,000-₹15,000 annually. Smart shopping means protecting your wallet as fiercely as you protect your passwords—because discounts mean nothing if scammers drain you...",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 342,
+      "instant": false
+    },
+    {
+      "topic": "Xiaomi 17 vs Samsung Galaxy S26 vs iPhone 17: Price in India, Specifications and Features Compared",
+      "tweet": "Xiaomi 17 starts at ₹28,999, Samsung Galaxy S26 at ₹52,999, and iPhone 17 at ₹79,999 — three phones, three different bank account damage levels. Pick your poison based on how much you're willing to suffer financially for performance bragging rights. #IndianTech #Smartphones",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 343,
+      "instant": false
+    },
+    {
+      "topic": "Immediate Gas Cylinder Delivery? Scammers Target LPG Users With Fake Ads",
+      "tweet": "Scammers are running fake ads promising immediate LPG cylinder delivery to trick Indian households into sharing personal details and payments. Your desperation for quick gas refills is their goldmine — verify through official distributors only, never trust random ads.",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 344,
+      "instant": false
+    },
+    {
+      "topic": "India’s Telecom Subscribers Reach 1.31 Billion; Jio, Airtel Dominate",
+      "tweet": "India's telecom subscriber base hit 1.31 billion, with Jio and Airtel controlling the majority. Congrats on finally connecting everyone — now if only they'd fix the actual call quality instead of just the numbers. #Telecom #IndianTech",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 345,
+      "instant": false
+    },
+    {
+      "topic": "Beware of Online Scams During Flipkart Big Billion Days, Amazon Great Indian Festival & Other Festive Sales",
+      "tweet": "Flipkart Big Billion Days and Amazon Great Indian Festival are scammers' favorite hunting season with fake links and phishing emails everywhere. Before you click that ₹99 deal, remember — if it sounds too good to be true, your bank account is about to learn an expensive lesson...",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 346,
+      "instant": false
+    },
+    {
+      "topic": "Rising Scams in India: Building Awareness and Prevention",
+      "tweet": "Rising scams in India have cost citizens over ₹50,000 crores annually, with UPI fraud increasing by 300% this year. Your digital wallet is safer than your common sense — enable two-factor authentication before the scammers do it for you. #CyberSecurity #IndianTech",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 347,
+      "instant": false
+    },
+    {
+      "topic": "Internet subscribers in India grew 1.1% in October-December 2025 quarter: TRAI",
+      "tweet": "Internet subscribers in India grew 1.1% in October-December 2025 quarter according to TRAI data. Congrats on adding millions of new users — now let's see if they actually get decent speed for their ₹300 monthly plans. #IndianInternet #TRAI",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 348,
+      "instant": false
+    },
+    {
+      "topic": "India surpasses one billion broadband subscribers in November 2025: TRAI",
+      "tweet": "India hit one billion broadband subscribers in November 2025, marking a massive connectivity milestone. Great news for digital India, but let's see if that speed actually matches the promise when you're streaming at 2 PM. #BroadbandIndia #DigitalIndia",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 349,
+      "instant": false
+    }
+  ],
   "slots": [
     {
       "label": "11 AM IST",
@@ -22,7 +133,7 @@
       "utc_min": 30
     }
   ],
-  "date": "2026-04-02",
-  "generated_at": "2026-04-02T08:29:14.053687",
+  "date": "2026-04-03",
+  "generated_at": "2026-04-03T05:10:35.505457",
   "approved_count": 0
 }
