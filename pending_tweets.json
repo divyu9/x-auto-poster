@@ -3,13 +3,14 @@
     {
       "topic": "India plans fresh incentives for phone production in boost for Apple, Samsung",
       "tweet": "India just announced fresh incentives to boost phone production for Apple and Samsung manufacturing. Great for factories, but don't expect cheaper iPhones anytime soon — corporations always find ways to keep prices premium. #MakeInIndia #TechPolicy",
-      "status": "approved",
+      "status": "posted",
       "slot_index": null,
       "slot_label": "1:00 PM",
       "utc_hour": 7,
       "utc_min": 30,
       "message_id": 340,
-      "instant": false
+      "instant": false,
+      "tweet_id": "2040332605971661014"
     },
     {
       "topic": "Ai+ Pulse 2 launches at ₹5,999 with 6,000mAh battery, 50MP camera",
