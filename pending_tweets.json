@@ -1,113 +1,113 @@
 {
   "tweets": [
     {
-      "topic": "Samsung Brings iPhone-Style Upgrade Plan To India: Get The Samsung Galaxy S26 Ultra At Half Its Price",
-      "tweet": "Samsung Galaxy S26 Ultra now available at 50% off through their new upgrade plan in India, making the flagship accessible at ₹54,999. Finally Samsung copied Apple's smartest move — affordable flagships that actually make people upgrade instead of holding onto their old phones.",
+      "topic": "Scams don’t stop at telecom: India needs platform-neutral communication rules",
+      "tweet": "Government finally admits telecom scams are just the tip of the iceberg, now pushing for platform-neutral communication rules across all services. Turns out criminals don't care which app they use to fraud you — so regulations need to catch up too. #IndianTech #CyberSecurity",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 363,
-      "instant": false
-    },
-    {
-      "topic": "India challenges Jio, Airtel over dropping entry-level plans",
-      "tweet": "India's telecom regulator challenges Jio and Airtel for discontinuing entry-level plans below ₹300. Looks like budget consumers are finally getting someone to fight for them — but will it actually change anything? #Telecom #IndianTech",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 364,
-      "instant": false
-    },
-    {
-      "topic": "Airtel vs Jio: How India’s telecom market became a duopoly",
-      "tweet": "Airtel and Jio now dominate India's telecom market with over 70% combined subscriber base, effectively creating a two-player monopoly. Consumers enjoyed cheaper data rates during competition, but now face limited choices and potential price hikes ahead.",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 365,
+      "message_id": 376,
       "instant": false
     },
     {
       "topic": "Xiaomi, Oppo, Realme, OnePlus see first India revenue drop as premium shift aids Apple, Samsung: Report",
-      "tweet": "Xiaomi, Oppo, Realme, and OnePlus posted their first revenue decline in India as customers shift toward Apple and Samsung premium devices. Budget phone makers finally learned that offering 108 megapixels doesn't beat brand loyalty — ouch. #IndianTech #Smartphones",
+      "tweet": "Xiaomi, Oppo, Realme, and OnePlus reported their first India revenue decline as consumers shift toward premium Apple and Samsung devices. Looks like budget phone dominance is officially over — your ₹20,000 flagship just became yesterday's news. #IndianTech #Smartphones",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 366,
+      "message_id": 377,
       "instant": false
     },
     {
-      "topic": "India’s Telecom Subscribers Reach 1.31 Billion; Jio, Airtel Dominate",
-      "tweet": "India's telecom subscriber base hit 1.31 billion with Jio and Airtel leading the charge. Basically everyone's connected now, but good luck getting a customer service rep to answer your call. #IndianTelecom #JioAirtel",
+      "topic": "India’s telecom base hits 1.27 billion as Reliance Jio and Airtel lead growth",
+      "tweet": "India's telecom subscriber base reached 1.27 billion with Reliance Jio and Airtel driving expansion across the nation. More connections mean cheaper data for everyone — but also means your personal number is probably already sold to ten marketing agencies.",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 367,
+      "message_id": 378,
       "instant": false
     },
     {
-      "topic": "Seven out of 10 consumers in India encountered tech support scams in the past year: Microsoft survey",
-      "tweet": "Microsoft's survey reveals 7 out of 10 Indian consumers fell victim to tech support scams in the past year. Your grandma isn't the only one clicking that \"Your PC has a virus\" popup — apparently most of us are equally gullible. #CyberSecurity #IndianTech",
+      "topic": "Samsung Brings iPhone-Style Upgrade Plan To India: Get The Samsung Galaxy S26 Ultra At Half Its Price",
+      "tweet": "Samsung launched an iPhone-style upgrade plan in India, offering Galaxy S26 Ultra at half price through their new program. Finally, premium flagships won't require selling a kidney, but Samsung's real profit comes from locking you into their ecosystem for years.",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 368,
+      "message_id": 379,
       "instant": false
     },
     {
-      "topic": "Xiaomi 17 Series Launch in India: Check Price, Sale Date, Early Bird Offers, Specifications, Features & More",
-      "tweet": "Xiaomi 17 Series launched in India with early bird discounts starting at ₹24,999 for the base model. Finally a flagship that won't empty your bank account, but the sale rush might empty the stock in hours. #Xiaomi #IndianTech",
+      "topic": "India’s digital base hits 1,321.31 million; Reliance Jio, Airtel command 73.49% of India’s broadband market",
+      "tweet": "India's digital base surged to 1,321.31 million users with Reliance Jio and Airtel dominating 73.49% of broadband market share. So basically, two telecom giants control your internet speed—hope you enjoy their duopoly pricing strategy. #IndianTelecom #DigitalIndia",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 369,
+      "message_id": 380,
       "instant": false
     },
     {
-      "topic": "7 in 10 consumers in India encountered tech support scams last year, highest globally: Microsoft",
-      "tweet": "Microsoft reveals 7 out of 10 Indian consumers fell victim to tech support scams last year, the highest globally. Seems like our passwords are less secure than our trust in random WhatsApp messages promising free software updates. #CyberSecurity #IndianTech",
+      "topic": "SBI warns customers: Scammers are sending fake 'bank letters' with these app links",
+      "tweet": "SBI issued a warning about scammers distributing fake bank letters containing malicious app links to steal customer data. So now you need to verify if your bank's own warning is actually from the bank — welcome to digital India. #Cybersecurity #BankingScams",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 370,
+      "message_id": 381,
       "instant": false
     },
     {
-      "topic": "Delhi Delivery Agent Defrauds Amazon, Flipkart, Used To Return Old Items",
-      "tweet": "Delhi delivery agent arrested for returning old items to Amazon and Flipkart, defrauding both platforms of lakhs in refunds. So your \"new\" phone might actually be someone's recycled reject — trust no one in the supply chain anymore. #EcommerceScam #IndianTech",
+      "topic": "Supply-chain scam: Ahmedabad police dismantle gadget-swapping interstate syndicate",
+      "tweet": "Ahmedabad police busted an interstate gadget-swapping syndicate operating across supply chains nationwide. Your \"new\" phone might've been someone else's returned device — welcome to the grey market lottery. #CyberCrime #IndianTech",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 371,
+      "message_id": 382,
       "instant": false
     },
     {
-      "topic": "Govt plans new smartphone export incentives in a boost for Apple, Samsung",
-      "tweet": "Government announced fresh smartphone export incentives targeting Apple and Samsung manufacturing in India. Looks like we're finally becoming the world's phone factory — hope our engineers get paid like Silicon Valley too. #MakeinIndia #TechExports",
+      "topic": "Rising Scams in India: Building Awareness and Prevention",
+      "tweet": "Rising scams in India cost citizens over ₹10,000 crore annually, with UPI fraud and fake job offers leading the charge. Your grandmother's WhatsApp groups are basically goldmines for scammers now — stay alert before your savings vanish. #CyberSecurity #IndiaAlert",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 372,
+      "message_id": 383,
+      "instant": false
+    },
+    {
+      "topic": "Beware of Online Scams During Flipkart Big Billion Days, Amazon Great Indian Festival & Other Festive Sales",
+      "tweet": "Flipkart Big Billion Days and Amazon Great Indian Festival are happening, but cybercriminals are also celebrating with fake links and phishing scams targeting your bank details.",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 384,
+      "instant": false
+    },
+    {
+      "topic": "Press Note Details: Press Information Bureau",
+      "tweet": "I'd be happy to help, but I need the actual tech news details from the Press Information Bureau press note. Could you share:\n\n- What company/product is being announced?\n- What's the key fact (launch price, specs, feature)?\n- Any numbers or dates?\n\nOnce you provide those detail...",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 385,
       "instant": false
     }
   ],
@@ -133,7 +133,7 @@
       "utc_min": 30
     }
   ],
-  "date": "2026-04-04",
-  "generated_at": "2026-04-04T07:38:15.313922",
+  "date": "2026-04-06",
+  "generated_at": "2026-04-06T18:39:02.120751",
   "approved_count": 0
 }
