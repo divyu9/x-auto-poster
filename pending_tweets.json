@@ -1,113 +1,113 @@
 {
   "tweets": [
     {
-      "topic": "Scams don’t stop at telecom: India needs platform-neutral communication rules",
-      "tweet": "Government finally admits telecom scams are just the tip of the iceberg, now pushing for platform-neutral communication rules across all services. Turns out criminals don't care which app they use to fraud you — so regulations need to catch up too. #IndianTech #CyberSecurity",
+      "topic": "India surpasses one billion broadband subscribers in November 2025: TRAI",
+      "tweet": "India crossed one billion broadband subscribers in November 2025, according to TRAI data released today. Finally we're connecting the entire nation, but half the country still complains about buffering during prime time. #IndianTelecom #BroadbandGrowth",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 376,
+      "message_id": 389,
       "instant": false
     },
     {
-      "topic": "Xiaomi, Oppo, Realme, OnePlus see first India revenue drop as premium shift aids Apple, Samsung: Report",
-      "tweet": "Xiaomi, Oppo, Realme, and OnePlus reported their first India revenue decline as consumers shift toward premium Apple and Samsung devices. Looks like budget phone dominance is officially over — your ₹20,000 flagship just became yesterday's news. #IndianTech #Smartphones",
+      "topic": "How safe are you from fraud during Amazon and Flipkart's Republic Day sales, and can cyber insurance...",
+      "tweet": "Amazon and Flipkart's Republic Day sales attract fraudsters like moths to flame, with cyber insurance policies covering only ₹1-5 lakh in losses. Your ₹50,000 shopping spree could leave you uninsured if scammers strike during checkout chaos. #CyberSecurity #IndianEcommerce",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 377,
+      "message_id": 390,
       "instant": false
     },
     {
-      "topic": "India’s telecom base hits 1.27 billion as Reliance Jio and Airtel lead growth",
-      "tweet": "India's telecom subscriber base reached 1.27 billion with Reliance Jio and Airtel driving expansion across the nation. More connections mean cheaper data for everyone — but also means your personal number is probably already sold to ten marketing agencies.",
+      "topic": "Smartphones launching in India next week: Vivo T5 Pro, OPPO F33 series, and more",
+      "tweet": "Vivo T5 Pro, OPPO F33 series, and several other smartphones launch in India next week with competitive specs and pricing. So many phones dropping simultaneously — your decision paralysis just got a premium upgrade. #IndianTech #SmartphoneLaunch",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 378,
+      "message_id": 391,
       "instant": false
     },
     {
-      "topic": "Samsung Brings iPhone-Style Upgrade Plan To India: Get The Samsung Galaxy S26 Ultra At Half Its Price",
-      "tweet": "Samsung launched an iPhone-style upgrade plan in India, offering Galaxy S26 Ultra at half price through their new program. Finally, premium flagships won't require selling a kidney, but Samsung's real profit comes from locking you into their ecosystem for years.",
+      "topic": "Internet subscribers in India grew 1.1% in October-December 2025 quarter: TRAI",
+      "tweet": "Internet subscribers in India grew 1.1% in October-December 2025 quarter according to TRAI data. Slow growth means most Indians already have internet access — now the real challenge is making it affordable enough for everyone to actually use it. #IndianTelecom #TRAI",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 379,
+      "message_id": 392,
       "instant": false
     },
     {
-      "topic": "India’s digital base hits 1,321.31 million; Reliance Jio, Airtel command 73.49% of India’s broadband market",
-      "tweet": "India's digital base surged to 1,321.31 million users with Reliance Jio and Airtel dominating 73.49% of broadband market share. So basically, two telecom giants control your internet speed—hope you enjoy their duopoly pricing strategy. #IndianTelecom #DigitalIndia",
+      "topic": "How to Find Legit Crypto Support in India 2026",
+      "tweet": "Crypto support services in India are becoming regulated with new RBI guidelines in 2026 for legitimate exchanges. Stop falling for scam helplines — only use verified SEBI-registered platforms before your Bitcoin vanishes into thin air. #CryptoIndia #DigitalSafety",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 380,
+      "message_id": 393,
       "instant": false
     },
     {
-      "topic": "SBI warns customers: Scammers are sending fake 'bank letters' with these app links",
-      "tweet": "SBI issued a warning about scammers distributing fake bank letters containing malicious app links to steal customer data. So now you need to verify if your bank's own warning is actually from the bank — welcome to digital India. #Cybersecurity #BankingScams",
+      "topic": "Redmi A7 Pro 5G Launched in India: Price, Specs and Sale Date Revealed",
+      "tweet": "Xiaomi launched the Redmi A7 Pro 5G in India with competitive pricing and impressive specs including a large display. Budget phone buyers finally get 5G without selling a kidney, though battery life remains the eternal question. #Redmi #5GTech",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 381,
-      "instant": false
-    },
-    {
-      "topic": "Supply-chain scam: Ahmedabad police dismantle gadget-swapping interstate syndicate",
-      "tweet": "Ahmedabad police busted an interstate gadget-swapping syndicate operating across supply chains nationwide. Your \"new\" phone might've been someone else's returned device — welcome to the grey market lottery. #CyberCrime #IndianTech",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 382,
-      "instant": false
-    },
-    {
-      "topic": "Rising Scams in India: Building Awareness and Prevention",
-      "tweet": "Rising scams in India cost citizens over ₹10,000 crore annually, with UPI fraud and fake job offers leading the charge. Your grandmother's WhatsApp groups are basically goldmines for scammers now — stay alert before your savings vanish. #CyberSecurity #IndiaAlert",
-      "status": "pending",
-      "slot_index": null,
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 383,
+      "message_id": 394,
       "instant": false
     },
     {
       "topic": "Beware of Online Scams During Flipkart Big Billion Days, Amazon Great Indian Festival & Other Festive Sales",
-      "tweet": "Flipkart Big Billion Days and Amazon Great Indian Festival are happening, but cybercriminals are also celebrating with fake links and phishing scams targeting your bank details.",
+      "tweet": "Flipkart Big Billion Days and Amazon Great Indian Festival attract scammers who exploit festive shopping with fake discounts and phishing links targeting unsuspecting buyers.",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 384,
+      "message_id": 395,
       "instant": false
     },
     {
-      "topic": "Press Note Details: Press Information Bureau",
-      "tweet": "I'd be happy to help, but I need the actual tech news details from the Press Information Bureau press note. Could you share:\n\n- What company/product is being announced?\n- What's the key fact (launch price, specs, feature)?\n- Any numbers or dates?\n\nOnce you provide those detail...",
+      "topic": "For the first time in almost a decade, revenue of the nine largest Chinese electronics companies operatin",
+      "tweet": "I'd be happy to help, but the news snippet appears incomplete. Could you provide the full story about the nine largest Chinese electronics companies operating in India? I need details like:\n\n- What happened to their revenue (increased/decreased)?\n- The specific numbers or perc...",
       "status": "pending",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 385,
+      "message_id": 396,
+      "instant": false
+    },
+    {
+      "topic": "India challenges Jio, Airtel over dropping entry-level plans",
+      "tweet": "India's telecom regulator is pressuring Jio and Airtel to keep affordable entry-level plans in their portfolio. Looks like the government finally realized that not everyone can afford ₹499 monthly plans — competition matters when you're serving a billion people.",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 397,
+      "instant": false
+    },
+    {
+      "topic": "Redmi A7 Pro 5G with 120Hz display and 6300 mAh battery launched in India, price starts at ₹12,499",
+      "tweet": "Redmi A7 Pro 5G launched in India starting at ₹12,499 with a 120Hz display and 6300mAh battery. Finally, budget phones that actually last a day and don't feel like ancient tech in your hand. #Redmi #BudgetTech",
+      "status": "pending",
+      "slot_index": null,
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 398,
       "instant": false
     }
   ],
@@ -133,7 +133,7 @@
       "utc_min": 30
     }
   ],
-  "date": "2026-04-06",
-  "generated_at": "2026-04-06T18:39:02.120751",
+  "date": "2026-04-14",
+  "generated_at": "2026-04-14T08:21:49.353267",
   "approved_count": 0
 }
