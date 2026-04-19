@@ -1,139 +1,106 @@
 {
   "tweets": [
     {
-      "topic": "Airtel Rs 469 and Rs 548 recharge plans: Compare calling, SMS, and data benefits",
-      "tweet": "Airtel's ₹469 plan offers 2GB daily data with unlimited calls, while ₹548 bumps it to 3GB daily with added SMS benefits. Pick based on your data habit — the extra gig might save you from painful mid-month throttling. #Airtel #IndianTelecom",
+      "topic": "Bharti Airtel Brings OTP Fraud Alerts to Live Calls for Users",
+      "tweet": "Bharti Airtel just launched real-time OTP fraud detection that alerts you during calls before scammers can trick you. So basically, your phone just became smarter than most of us at spotting shady calls. #AirtelUpdate #DigitalSafety",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 508,
+      "message_id": 521,
       "instant": false
     },
     {
-      "topic": "Which is the cheapest way to get a new SIM in India? Plans start at Rs 1",
-      "tweet": "Jio launches prepaid plans starting at just ₹1 with basic calling and data benefits for new users in India. Finally, switching networks or getting a backup SIM won't burn a hole in your pocket anymore. #Jio #IndianTelecom",
+      "topic": "vivo Launches the vivo T5 Pro with 9020 mAh Battery",
+      "tweet": "Vivo just dropped the T5 Pro with a massive 9020 mAh battery that'll probably outlast your Netflix binge sessions. Indians finally get a phone that doesn't need life support by evening! #vivoT5Pro #BatteryLife",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 509,
+      "message_id": 522,
       "instant": false
     },
     {
-      "topic": "JioBlackRock Large Cap Fund",
-      "tweet": "JioBlackRock launches a new Large Cap Fund in India with a focus on established bluechip companies and dividend growth. This could be a solid option for Indians looking to start investing without the rollercoaster ride of smaller stocks. #JioBlackRock #IndianInvesting",
+      "topic": "Motorola Edge 70 Pro launching on April 22",
+      "tweet": "Motorola Edge 70 Pro drops on April 22 with a 50MP camera and 144Hz display—expect flagship vibes without the ₹1 lakh+ price tag. Finally, a phone that lets your wallet breathe while still clicking stunning shots! #MotorolaEdge70Pro #SmartphoneLaunch",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 510,
+      "message_id": 523,
       "instant": false
     },
     {
-      "topic": "Kolkata Knight Riders vs Rajasthan Royals, IPL 2026 Live Streaming Online and Free Telecast",
-      "tweet": "IPL 2026 KKR vs RR match will be live streamed on Jio Cinema and telecast on Star Sports with free options available for fans. Great news if you've been wondering where to catch the action without burning a hole in your pocket. #IPL2026 #CricketIndia",
+      "topic": "Samsung Galaxy F70e 5G launch in India",
+      "tweet": "Samsung just dropped the Galaxy F70e 5G in India at ₹16,999 — giving budget shoppers legit 5G without burning a hole in the pocket. Finally, affordable speed that doesn't feel like a compromise! #SamsungIndia #5GForAll",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 511,
+      "message_id": 524,
       "instant": false
     },
     {
-      "topic": "Airtel 84-Day Prepaid Recharge Plans: Here’s What You Get in April 2026",
-      "tweet": "Airtel's 84-day prepaid plans in April 2026 offer unlimited calls, 2GB daily data, and free Netflix access starting around ₹2,499. Pretty solid if you're someone who forgets to recharge every month and wants a streaming bonus bundled in. #Airtel #IndianTelecom",
+      "topic": "Samsung Galaxy S26 series gets Quick Share support for iPhones",
+      "tweet": "Samsung Galaxy S26 series now supports Quick Share with iPhones, making cross-device file transfers finally seamless. Indian users can finally stop the whole \"send it via email\" dance when sharing stuff with their iPhone friends. #SamsungGalaxy #TechNews",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 512,
+      "message_id": 525,
       "instant": false
     },
     {
-      "topic": "Airtel expands its 5G services to Gujarat: All details",
-      "tweet": "Airtel has expanded its 5G services across Gujarat, bringing faster connectivity to more cities in the state. This means better download speeds and smoother streaming for folks in Gujarat who've been waiting for the 5G upgrade. #Airtel #5GIndia",
+      "topic": "Amazon India launches dedicated AI Store for consumer electronics",
+      "tweet": "Amazon India just launched an AI Store featuring curated consumer electronics with personalized recommendations powered by machine learning. This means you'll actually find gadgets that match what you need instead of scrolling endlessly through 50,000 phone cases.",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 513,
+      "message_id": 526,
       "instant": false
     },
     {
-      "topic": "The Insider's Perspective on Remote Work Definition",
-      "tweet": "I'd love to help, but I need the actual news details to write the tweet. Could you share what specifically happened with remote work in India? For example:\n\n- Did a company announce a new remote work policy?\n- Did the government issue new guidelines with specific rules?\n- Did ...",
+      "topic": "Operation Octopus 2.0: 52 arrested in pan-India cyber fraud crackdown including 32 bank officials",
+      "tweet": "Operation Octopus 2.0 just busted a massive cyber fraud ring with 52 arrests across India, including 32 bank officials involved in the scheme. Looks like our banking system is finally getting serious about keeping your money safe from inside jobs! #CyberCrimeAlert #IndianTech",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 514,
+      "message_id": 527,
       "instant": false
     },
     {
-      "topic": "Airtel ₹1,599 Broadband Plan: Is It Really Worth the Money? It Offers 300 Mbps—But Does It Deliver Value?",
-      "tweet": "Airtel's new ₹1,599 broadband plan delivers 300 Mbps speeds, making it competitive for heavy streamers and gamers in metros. Whether it's worth it really depends on your actual usage—could be perfect or overkill depending on your household. #Airtel #IndianBroadband",
+      "topic": "CBI cracks Rs 1.6 crore digital arrest cyber fraud case",
+      "tweet": "CBI busted a Rs 1.6 crore digital arrest scam where cybercriminals impersonated cops to trap victims online. Stay alert—never share OTPs or bank details with anyone claiming to be law enforcement, even if they look legit on screen. #CyberSafety #StaySmart",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 515,
+      "message_id": 528,
       "instant": false
     },
     {
-      "topic": "Over 130 million Indians may lose access to hundreds of free TV channels soon, here is why",
-      "tweet": "DTH and cable operators are set to shut down free-to-air TV channels, affecting over 130 million Indians as regulatory changes kick in. Looks like those free channels we grew up with might finally become premium, so time to explore streaming apps if you haven't already.",
+      "topic": "SBI warns customers of fake YONO app scam messages",
+      "tweet": "SBI just flagged a massive fake YONO app scam where fraudsters are dropping fake messages to steal your login details and ₹lakhs. So basically, if YONO suddenly asks you to \"verify\" anything via random link, it's definitely not your friendly neighborhood bank.",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 516,
+      "message_id": 529,
       "instant": false
     },
     {
-      "topic": "Designed for Power and Endurance: vivo Launches the vivo T5 Pro with its Biggest-Ever 9020 mAh Battery",
-      "tweet": "Vivo T5 Pro just dropped with a massive 9020mAh battery — India's getting a phone that could genuinely last 2+ days on a single charge. If you're tired of hunting for chargers every evening, this is the kind of upgrade that actually matters. #VivoT5Pro #IndianTech",
+      "topic": "Perplexity launches Personal Computer with AI agents for Mac",
+      "tweet": "Perplexity just dropped their Personal Computer — an AI agent that lives on your Mac and costs $20/month for early access. So basically, you're getting a digital assistant that actually understands your workflow instead of just looking confused. #AI #Mac",
       "status": "pending",
-      "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 517,
+      "message_id": 530,
       "instant": false
-    }
-  ],
-  "slots": [
-    {
-      "label": "11 AM IST",
-      "utc_hour": 5,
-      "utc_min": 30
-    },
-    {
-      "label": "1 PM IST",
-      "utc_hour": 7,
-      "utc_min": 30
-    },
-    {
-      "label": "5 PM IST",
-      "utc_hour": 11,
-      "utc_min": 30
-    },
-    {
-      "label": "9 PM IST",
-      "utc_hour": 15,
-      "utc_min": 30
     }
   ],
   "date": "2026-04-19",
-  "generated_at": "2026-04-19T16:21:50.205151",
-  "approved_count": 0
+  "generated_at": "2026-04-19T16:36:39.238853"
 }
