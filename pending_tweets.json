@@ -69,13 +69,13 @@
     {
       "topic": "iPhone 18 Pro Max launching soon: New Cherry colour variant, price, processor and expected upgrades",
       "tweet": "iPhone 18 Pro Max arriving with stunning Cherry colour, faster processor, and premium upgrades in India soon. Great if you love paying ₹1.5+ lakhs for a phone that does exactly what last year's model did. #Apple #iPhone18",
-      "status": "pending",
+      "status": "posting",
       "slot_index": null,
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
       "message_id": 408,
-      "instant": false
+      "instant": true
     },
     {
       "topic": "Apple iPhone 18 Pro: Expected design, display, colours options and launch timeline",
