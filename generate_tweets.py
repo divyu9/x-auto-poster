@@ -115,27 +115,35 @@ def fetch_news():
     import time as time_module
     from datetime import datetime, timedelta
 
-    # Today and yesterday for query
-    today = datetime.now().strftime("%Y-%m-%d")
     yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
 
-    # Google News with after: filter forces fresh results
-    feeds = [
-        f"https://news.google.com/rss/search?q=Jio+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
-        f"https://news.google.com/rss/search?q=Airtel+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
-        f"https://news.google.com/rss/search?q=TRAI+telecom+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
-        f"https://news.google.com/rss/search?q=smartphone+launch+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
-        f"https://news.google.com/rss/search?q=Samsung+Apple+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
-        f"https://news.google.com/rss/search?q=cyber+scam+fraud+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
-        f"https://news.google.com/rss/search?q=Amazon+Flipkart+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
-        f"https://news.google.com/rss/search?q=UPI+payment+fintech+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
-        f"https://news.google.com/rss/search?q=India+tech+consumer+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
-        f"https://news.google.com/rss/search?q=mobile+internet+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+    # Hard blocklist — filtered BEFORE sending to Gemini
+    BLOCK_KEYWORDS = [
+        "share price", "stock price", "nse", "bse", "sensex", "nifty",
+        "ipo", "mutual fund", "equity", "market cap", "shares rise",
+        "shares fall", "shares up", "shares down", "stock market",
+        "quarterly results", "q1 results", "q2 results", "q3 results", "q4 results",
+        "revenue", "profit", "earnings", "dividend", "investor",
+        "target price", "buy rating", "sell rating", "analyst",
     ]
 
-    cutoff_ts = time_module.time() - (72 * 3600)  # 72hr fallback filter
+    feeds = [
+        f"https://news.google.com/rss/search?q=Jio+telecom+plan+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=Airtel+plan+network+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=TRAI+regulation+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=smartphone+launch+price+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=Samsung+Apple+OnePlus+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=cyber+fraud+scam+India+consumer+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=Amazon+Flipkart+consumer+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=UPI+payment+app+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=broadband+internet+speed+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=AI+app+gadget+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+    ]
+
+    cutoff_ts = time_module.time() - (72 * 3600)
     headlines = []
     seen = set()
+    blocked = 0
 
     for url in feeds:
         try:
@@ -143,18 +151,25 @@ def fetch_news():
             for entry in feed.entries[:6]:
                 pub = entry.get("published_parsed")
                 if pub:
-                    entry_ts = time_module.mktime(pub)
-                    if entry_ts < cutoff_ts:
-                        continue  # skip anything older than 3 days
+                    if time_module.mktime(pub) < cutoff_ts:
+                        continue
 
                 title = entry.title.split(" - ")[0].strip()
+                title_lower = title.lower()
+
+                # Hard filter — skip stock market headlines
+                if any(kw in title_lower for kw in BLOCK_KEYWORDS):
+                    blocked += 1
+                    print(f"  BLOCKED: {title[:60]}")
+                    continue
+
                 if len(title) > 25 and title not in seen:
                     seen.add(title)
                     headlines.append(title)
         except Exception as e:
             print(f"Feed error: {e}")
 
-    print(f"Fetched {len(headlines)} fresh headlines (after:{yesterday})")
+    print(f"Fetched {len(headlines)} fresh headlines, blocked {blocked} stock/finance topics")
     return headlines[:50]
 
 def pick_10_topics(headlines, library_topics):
