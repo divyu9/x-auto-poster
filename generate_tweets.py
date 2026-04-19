@@ -106,48 +106,40 @@ def load_library():
     return data.get("topics", []) if data else []
 
 def fetch_news():
-    from datetime import timezone
     import time as time_module
+    from datetime import datetime, timedelta
 
+    # Today and yesterday for query
+    today = datetime.now().strftime("%Y-%m-%d")
+    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+
+    # Google News with after: filter forces fresh results
     feeds = [
-        # Telecom
-        "https://news.google.com/rss/search?q=Jio+India+2025&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=Airtel+India+2025&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=BSNL+5G+India&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=TRAI+regulation+India&hl=en-IN&gl=IN&ceid=IN:en",
-        # Consumer tech
-        "https://news.google.com/rss/search?q=smartphone+launch+India&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=iPhone+India+price&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=Samsung+India+launch&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=OnePlus+Realme+India&hl=en-IN&gl=IN&ceid=IN:en",
-        # Scams & consumer
-        "https://news.google.com/rss/search?q=cyber+fraud+scam+India&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=Amazon+Flipkart+India&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=consumer+complaint+India+tech&hl=en-IN&gl=IN&ceid=IN:en",
-        # AI & apps
-        "https://news.google.com/rss/search?q=AI+app+India+launch&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=UPI+payment+India+new&hl=en-IN&gl=IN&ceid=IN:en",
-        # Broad tech India
-        "https://news.google.com/rss/search?q=India+tech+news+today&hl=en-IN&gl=IN&ceid=IN:en",
-        "https://news.google.com/rss/search?q=gadget+India+review+price&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=Jio+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=Airtel+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=TRAI+telecom+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=smartphone+launch+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=Samsung+Apple+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=cyber+scam+fraud+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=Amazon+Flipkart+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=UPI+payment+fintech+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=India+tech+consumer+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
+        f"https://news.google.com/rss/search?q=mobile+internet+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
     ]
 
-    now_ts = time_module.time()
-    cutoff = now_ts - (48 * 3600)  # last 48 hours only
-
+    cutoff_ts = time_module.time() - (72 * 3600)  # 72hr fallback filter
     headlines = []
     seen = set()
 
     for url in feeds:
         try:
             feed = feedparser.parse(url)
-            for entry in feed.entries[:8]:
-                # Filter by date if available
+            for entry in feed.entries[:6]:
                 pub = entry.get("published_parsed")
                 if pub:
                     entry_ts = time_module.mktime(pub)
-                    if entry_ts < cutoff:
-                        continue  # skip old news
+                    if entry_ts < cutoff_ts:
+                        continue  # skip anything older than 3 days
 
                 title = entry.title.split(" - ")[0].strip()
                 if len(title) > 25 and title not in seen:
@@ -155,9 +147,8 @@ def fetch_news():
                     headlines.append(title)
         except Exception as e:
             print(f"Feed error: {e}")
-            pass
 
-    print(f"Fetched {len(headlines)} fresh headlines (last 48h)")
+    print(f"Fetched {len(headlines)} fresh headlines (after:{yesterday})")
     return headlines[:50]
 
 def pick_10_topics(headlines, library_topics):
