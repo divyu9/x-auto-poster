@@ -50,7 +50,7 @@ def load_library():
     data, _ = gh_get("topics_library.json")
     return data.get("topics", []) if data else []
 
-def fetch_news():
+def fetch_news(library_topics=None):
     yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
 
     BLOCK = [
@@ -76,6 +76,15 @@ def fetch_news():
         f"https://news.google.com/rss/search?q=5G+broadband+internet+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
         f"https://news.google.com/rss/search?q=new+app+gadget+India+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en",
     ]
+
+    # Add feeds from library topics
+    if library_topics:
+        for t in library_topics[:5]:  # max 5 extra feeds
+            kw = t['text'].replace(' ', '+')[:50]
+            feeds.append(
+                f"https://news.google.com/rss/search?q={kw}+after:{yesterday}&hl=en-IN&gl=IN&ceid=IN:en"
+            )
+        print(f"Added {min(len(library_topics),5)} library topic feeds")
 
     cutoff_ts = time.time() - (72 * 3600)
     headlines = []
@@ -193,8 +202,8 @@ def send_to_telegram(all_tweets):
 
 def main():
     print(f"[{datetime.now().isoformat()}] Starting generation...")
-    headlines = fetch_news()
     library = load_library()
+    headlines = fetch_news(library)
     print(f"Library: {len(library)} custom topics")
     topics = pick_10_topics(headlines, library)
 
