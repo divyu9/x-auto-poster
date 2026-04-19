@@ -161,21 +161,26 @@ def pick_10_topics(headlines, library_topics):
     h_text = "\n".join([f"- {h}" for h in headlines])
     l_text = "\n".join([f"- {t['text']}" for t in library_topics]) if library_topics else "None"
 
-    sys_msg = "You are a content strategist for Sarcastic Sindhi, India's top consumer-advocate tech creator."
+    sys_msg = "You are a content strategist for Sarcastic Sindhi, India's top consumer-advocate tech creator (391K YouTube subscribers). His niche: consumer tech, telecom, gadgets, scams, digital life for Indians."
     user_msg = (
-        f"Pick the 10 best topics for viral Indian tech tweets from these headlines and library topics.\n\n"
+        f"Pick 10 UNIQUE and DIVERSE topics for Indian tech tweets. Each topic must be about a DIFFERENT news story.\n\n"
+        f"STRICT RULES:\n"
+        f"- NO stock market, share prices, NSE, BSE, Sensex, Nifty, IPO, mutual funds\n"
+        f"- NO duplicate stories — if multiple headlines are about the same event, pick only 1\n"
+        f"- NO politics unrelated to consumer tech\n"
+        f"- ONLY: telecom plans, smartphones, gadgets, apps, internet, consumer scams, digital payments, AI tools, tech company news\n"
+        f"- Each topic must be genuinely different\n\n"
         f"NEWS:\n{h_text}\n\nLIBRARY TOPICS:\n{l_text}\n\n"
-        f"Prioritize: scams, consumer rights, price reveals, telecom updates, gadget launches.\n"
-        f"Return ONLY a JSON array of 10 strings:\n"
+        f'Return ONLY a JSON array of 10 unique strings, no markdown:\n'
         f'["topic1", "topic2", "topic3", "topic4", "topic5", "topic6", "topic7", "topic8", "topic9", "topic10"]'
     )
 
     raw = ask_gemini(sys_msg, user_msg)
     try:
         clean = raw.replace("```json", "").replace("```", "").strip()
-        start = clean.index("[")
-        end = clean.rindex("]") + 1
-        return json.loads(clean[start:end])
+        start_idx = clean.index("[")
+        end_idx = clean.rindex("]") + 1
+        return json.loads(clean[start_idx:end_idx])
     except:
         print("Topic parse failed, using headlines directly")
         return headlines[:10]
