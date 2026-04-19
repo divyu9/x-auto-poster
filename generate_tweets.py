@@ -106,25 +106,59 @@ def load_library():
     return data.get("topics", []) if data else []
 
 def fetch_news():
+    from datetime import timezone
+    import time as time_module
+
     feeds = [
-        "https://news.google.com/rss/search?q=Jio+Airtel+telecom+India&hl=en-IN&gl=IN",
-        "https://news.google.com/rss/search?q=tech+scam+India+consumer&hl=en-IN&gl=IN",
-        "https://news.google.com/rss/search?q=smartphone+launch+India+price&hl=en-IN&gl=IN",
-        "https://news.google.com/rss/search?q=Amazon+Flipkart+India+scam&hl=en-IN&gl=IN",
-        "https://news.google.com/rss/search?q=TRAI+internet+policy+India&hl=en-IN&gl=IN",
-        "https://news.google.com/rss/search?q=Apple+Samsung+India+price&hl=en-IN&gl=IN",
+        # Telecom
+        "https://news.google.com/rss/search?q=Jio+India+2025&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=Airtel+India+2025&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=BSNL+5G+India&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=TRAI+regulation+India&hl=en-IN&gl=IN&ceid=IN:en",
+        # Consumer tech
+        "https://news.google.com/rss/search?q=smartphone+launch+India&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=iPhone+India+price&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=Samsung+India+launch&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=OnePlus+Realme+India&hl=en-IN&gl=IN&ceid=IN:en",
+        # Scams & consumer
+        "https://news.google.com/rss/search?q=cyber+fraud+scam+India&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=Amazon+Flipkart+India&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=consumer+complaint+India+tech&hl=en-IN&gl=IN&ceid=IN:en",
+        # AI & apps
+        "https://news.google.com/rss/search?q=AI+app+India+launch&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=UPI+payment+India+new&hl=en-IN&gl=IN&ceid=IN:en",
+        # Broad tech India
+        "https://news.google.com/rss/search?q=India+tech+news+today&hl=en-IN&gl=IN&ceid=IN:en",
+        "https://news.google.com/rss/search?q=gadget+India+review+price&hl=en-IN&gl=IN&ceid=IN:en",
     ]
+
+    now_ts = time_module.time()
+    cutoff = now_ts - (48 * 3600)  # last 48 hours only
+
     headlines = []
+    seen = set()
+
     for url in feeds:
         try:
             feed = feedparser.parse(url)
-            for entry in feed.entries[:6]:
+            for entry in feed.entries[:8]:
+                # Filter by date if available
+                pub = entry.get("published_parsed")
+                if pub:
+                    entry_ts = time_module.mktime(pub)
+                    if entry_ts < cutoff:
+                        continue  # skip old news
+
                 title = entry.title.split(" - ")[0].strip()
-                if len(title) > 20:
+                if len(title) > 25 and title not in seen:
+                    seen.add(title)
                     headlines.append(title)
-        except:
+        except Exception as e:
+            print(f"Feed error: {e}")
             pass
-    return list(set(headlines))[:40]
+
+    print(f"Fetched {len(headlines)} fresh headlines (last 48h)")
+    return headlines[:50]
 
 def pick_10_topics(headlines, library_topics):
     h_text = "\n".join([f"- {h}" for h in headlines])
