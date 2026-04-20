@@ -13,10 +13,10 @@
     {
       "topic": "Bharti Airtel Hikes Prepaid Plan Prices by ₹30 with 5G Benefits",
       "tweet": "Bharti Airtel just hiked prepaid plans by ₹30, but you're getting 5G access across all price points now. So basically, you're paying a bit extra but your Instagram Reels will load at light speed! #Airtel5G #IndianTelecom",
-      "status": "pending",
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
+      "status": "approved",
+      "slot_label": "12:00 PM",
+      "utc_hour": 6,
+      "utc_min": 30,
       "message_id": 538,
       "instant": false
     },
