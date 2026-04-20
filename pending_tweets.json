@@ -1,106 +1,106 @@
 {
   "tweets": [
     {
-      "topic": "Bharti Airtel Brings OTP Fraud Alerts to Live Calls for Users",
-      "tweet": "Bharti Airtel just launched real-time OTP fraud detection that alerts you during calls before scammers can trick you. So basically, your phone just became smarter than most of us at spotting shady calls. #AirtelUpdate #DigitalSafety",
+      "topic": "Reliance Jio Rs 500 Plan Bundles YouTube Premium and Gemini AI Pro",
+      "tweet": "Reliance Jio's new ₹500 plan now bundles YouTube Premium and Google Gemini AI Pro for 3 months. Finally getting some real value in mid-range plans—your streaming and AI assistant just became besties! #JioUpdate #TechNews",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 521,
+      "message_id": 537,
       "instant": false
     },
     {
-      "topic": "vivo Launches the vivo T5 Pro with 9020 mAh Battery",
-      "tweet": "Vivo just dropped the T5 Pro with a massive 9020 mAh battery that'll probably outlast your Netflix binge sessions. Indians finally get a phone that doesn't need life support by evening! #vivoT5Pro #BatteryLife",
+      "topic": "Bharti Airtel Hikes Prepaid Plan Prices by ₹30 with 5G Benefits",
+      "tweet": "Bharti Airtel just hiked prepaid plans by ₹30, but you're getting 5G access across all price points now. So basically, you're paying a bit extra but your Instagram Reels will load at light speed! #Airtel5G #IndianTelecom",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 522,
+      "message_id": 538,
       "instant": false
     },
     {
-      "topic": "Motorola Edge 70 Pro launching on April 22",
-      "tweet": "Motorola Edge 70 Pro drops on April 22 with a 50MP camera and 144Hz display—expect flagship vibes without the ₹1 lakh+ price tag. Finally, a phone that lets your wallet breathe while still clicking stunning shots! #MotorolaEdge70Pro #SmartphoneLaunch",
+      "topic": "Vivo T5 Pro 5G Launched with 9020mAh Battery and Sony Camera",
+      "tweet": "Vivo T5 Pro 5G launched with a massive 9020mAh battery and Sony IMX882 camera at ₹20,999. Finally, a phone that won't die by evening and actually clicks decent photos without breaking the bank! #VivoT5Pro #5GPhones",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 523,
+      "message_id": 539,
       "instant": false
     },
     {
-      "topic": "Samsung Galaxy F70e 5G launch in India",
-      "tweet": "Samsung just dropped the Galaxy F70e 5G in India at ₹16,999 — giving budget shoppers legit 5G without burning a hole in the pocket. Finally, affordable speed that doesn't feel like a compromise! #SamsungIndia #5GForAll",
+      "topic": "Huawei Launches World's First Horizontally Wide Foldable Phone",
+      "tweet": "Huawei just dropped the world's first horizontal foldable phone with a massive screen that unfolds like a tablet—think bigger than anything Samsung or Apple has.",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 524,
+      "message_id": 540,
       "instant": false
     },
     {
-      "topic": "Samsung Galaxy S26 series gets Quick Share support for iPhones",
-      "tweet": "Samsung Galaxy S26 series now supports Quick Share with iPhones, making cross-device file transfers finally seamless. Indian users can finally stop the whole \"send it via email\" dance when sharing stuff with their iPhone friends. #SamsungGalaxy #TechNews",
-      "status": "posting",
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 525,
-      "instant": false
-    },
-    {
-      "topic": "Amazon India launches dedicated AI Store for consumer electronics",
-      "tweet": "Amazon India just launched an AI Store featuring curated consumer electronics with personalized recommendations powered by machine learning. This means you'll actually find gadgets that match what you need instead of scrolling endlessly through 50,000 phone cases.",
-      "status": "posting",
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 526,
-      "instant": false
-    },
-    {
-      "topic": "Operation Octopus 2.0: 52 arrested in pan-India cyber fraud crackdown including 32 bank officials",
-      "tweet": "Operation Octopus 2.0 just busted a massive cyber fraud ring with 52 arrests across India, including 32 bank officials involved in the scheme. Looks like our banking system is finally getting serious about keeping your money safe from inside jobs! #CyberCrimeAlert #IndianTech",
+      "topic": "Operation Octopus 2.0: 52 Arrested in Pan-India Cyber Fraud Including 32 Bank Officials",
+      "tweet": "Operation Octopus 2.0 just netted 52 people across India, including 32 bank officials, in a massive cyber fraud bust—turns out your friendly neighborhood banker might've had a side hustle.",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 527,
+      "message_id": 541,
       "instant": false
     },
     {
-      "topic": "CBI cracks Rs 1.6 crore digital arrest cyber fraud case",
-      "tweet": "CBI busted a Rs 1.6 crore digital arrest scam where cybercriminals impersonated cops to trap victims online. Stay alert—never share OTPs or bank details with anyone claiming to be law enforcement, even if they look legit on screen. #CyberSafety #StaySmart",
+      "topic": "SIM Box Racket Busted at Hyderabad Airport with 198 Pre-Activated Cards",
+      "tweet": "Hyderabad Airport customs busted a SIM box racket with 198 pre-activated cards worth ₹5+ lakhs—basically a scammer's dream setup caught red-handed. Good news for us: fewer spam calls and fraud attempts heading our way! #Cybersecurity #IndiaFirst",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 528,
+      "message_id": 542,
       "instant": false
     },
     {
-      "topic": "SBI warns customers of fake YONO app scam messages",
-      "tweet": "SBI just flagged a massive fake YONO app scam where fraudsters are dropping fake messages to steal your login details and ₹lakhs. So basically, if YONO suddenly asks you to \"verify\" anything via random link, it's definitely not your friendly neighborhood bank.",
-      "status": "posting",
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 529,
-      "instant": false
-    },
-    {
-      "topic": "Perplexity launches Personal Computer with AI agents for Mac",
-      "tweet": "Perplexity just dropped their Personal Computer — an AI agent that lives on your Mac and costs $20/month for early access. So basically, you're getting a digital assistant that actually understands your workflow instead of just looking confused. #AI #Mac",
+      "topic": "Google Pay Launches Pocket Money Feature",
+      "tweet": "Google Pay just rolled out a Pocket Money feature letting parents set up ₹500-₹5,000 monthly allowances for kids with supervised digital wallets. Finally, teaching youngsters about money management without them raiding your actual bank account! #GooglePay #FinTech",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 530,
+      "message_id": 543,
+      "instant": false
+    },
+    {
+      "topic": "RBI Proposes 1-Hour Pause for High-Value UPI Payments",
+      "tweet": "RBI just proposed a 1-hour pause for UPI payments above ₹5 lakh to prevent fraud and unauthorized transfers. Good news for your peace of mind—gives you time to double-check before large money leaves your account. #UPI #FinancialSafety",
+      "status": "pending",
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 544,
+      "instant": false
+    },
+    {
+      "topic": "GeForce NOW Cloud Gaming Service Now Available in India at Rs 999",
+      "tweet": "NVIDIA's GeForce NOW just landed in India at ₹999/month, letting you play AAA games without dropping ₹2 lakhs on a beast PC. Finally, your old laptop can stop sweating during those gaming sessions. #GeForceNOW #IndianGaming",
+      "status": "pending",
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 545,
+      "instant": false
+    },
+    {
+      "topic": "Critical Software Security Updates: Why You Shouldn't Ignore Them",
+      "tweet": "Your apps just dropped critical security patches today—ignoring them is like leaving your door unlocked while traveling. Update everything now because hackers literally hunt for people skipping these fixes, and it takes 2 minutes vs. losing ₹50,000+ to fraud.",
+      "status": "pending",
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 546,
       "instant": false
     }
   ],
-  "date": "2026-04-19",
-  "generated_at": "2026-04-19T16:36:39.238853"
+  "date": "2026-04-20",
+  "generated_at": "2026-04-20T04:57:57.579209"
 }
