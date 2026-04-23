@@ -1,106 +1,106 @@
 {
   "tweets": [
     {
-      "topic": "Reliance Jio Rs 500 Plan Bundles YouTube Premium and Gemini AI Pro",
-      "tweet": "Reliance Jio's new ₹500 plan now bundles YouTube Premium and Google Gemini AI Pro for 3 months. Finally getting some real value in mid-range plans—your streaming and AI assistant just became besties! #JioUpdate #TechNews",
+      "topic": "Jio, Airtel, Vi, BSNL Prepaid Plans Price Hike - New Rates Explained",
+      "tweet": "Jio, Airtel, and Vi have hiked prepaid plans by 12-25% with rates now starting from ₹155-₹199 for 28-day plans, while BSNL keeps it affordable at ₹99. Good news is you get more validity and data, but yeah, our phone bills just got heavier! #TelecomNews #PrepaidPlans",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 537,
+      "message_id": 551,
       "instant": false
     },
     {
-      "topic": "Bharti Airtel Hikes Prepaid Plan Prices by ₹30 with 5G Benefits",
-      "tweet": "Bharti Airtel just hiked prepaid plans by ₹30, but you're getting 5G access across all price points now. So basically, you're paying a bit extra but your Instagram Reels will load at light speed! #Airtel5G #IndianTelecom",
-      "status": "approved",
-      "slot_label": "12:00 PM",
-      "utc_hour": 6,
-      "utc_min": 30,
-      "message_id": 538,
-      "instant": false
-    },
-    {
-      "topic": "Vivo T5 Pro 5G Launched with 9020mAh Battery and Sony Camera",
-      "tweet": "Vivo T5 Pro 5G launched with a massive 9020mAh battery and Sony IMX882 camera at ₹20,999. Finally, a phone that won't die by evening and actually clicks decent photos without breaking the bank! #VivoT5Pro #5GPhones",
+      "topic": "Reliance Jio and Bank of Baroda Launch Mobile Banking App for JioPhone Prima 4G",
+      "tweet": "Reliance Jio & Bank of Baroda just dropped a mobile banking app exclusively for JioPhone Prima 4G, making digital banking accessible to feature phone users. Now your ₹3,349 phone can handle UPI, transfers, and loans without needing a smartphone upgrade. #JioPhone #DigitalIndia",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 539,
+      "message_id": 552,
       "instant": false
     },
     {
-      "topic": "Huawei Launches World's First Horizontally Wide Foldable Phone",
-      "tweet": "Huawei just dropped the world's first horizontal foldable phone with a massive screen that unfolds like a tablet—think bigger than anything Samsung or Apple has.",
+      "topic": "HBO Max Launches in India via JioHotstar - Pricing and Details",
+      "tweet": "HBO Max just launched in India through JioCinema at ₹99/month for ad-supported and ₹299/month ad-free! This means Indian streamers finally get Game of Thrones, Dune, and DC stuff without juggling multiple apps. #StreamingWars #JioCinema",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 540,
+      "message_id": 553,
       "instant": false
     },
     {
-      "topic": "Operation Octopus 2.0: 52 Arrested in Pan-India Cyber Fraud Including 32 Bank Officials",
-      "tweet": "Operation Octopus 2.0 just netted 52 people across India, including 32 bank officials, in a massive cyber fraud bust—turns out your friendly neighborhood banker might've had a side hustle.",
+      "topic": "Airtel Deploys 3,400 New 5G Sites in Maharashtra and Goa",
+      "tweet": "Airtel just switched on 3,400 fresh 5G sites across Maharashtra and Goa, bringing next-gen speeds to over 2 crore people. So basically, your Instagram reels are about to load faster than your neighbor's WiFi—finally some good news for our internet dreams! #5G #Airtel",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 541,
+      "message_id": 554,
       "instant": false
     },
     {
-      "topic": "SIM Box Racket Busted at Hyderabad Airport with 198 Pre-Activated Cards",
-      "tweet": "Hyderabad Airport customs busted a SIM box racket with 198 pre-activated cards worth ₹5+ lakhs—basically a scammer's dream setup caught red-handed. Good news for us: fewer spam calls and fraud attempts heading our way! #Cybersecurity #IndiaFirst",
-      "status": "posting",
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 542,
-      "instant": false
-    },
-    {
-      "topic": "Google Pay Launches Pocket Money Feature",
-      "tweet": "Google Pay just rolled out a Pocket Money feature letting parents set up ₹500-₹5,000 monthly allowances for kids with supervised digital wallets. Finally, teaching youngsters about money management without them raiding your actual bank account! #GooglePay #FinTech",
+      "topic": "vivo X300 Ultra and X300 FE India Launch Announced",
+      "tweet": "Vivo just announced the X300 Ultra and X300 FE for India with the Ultra packing a 50MP periscope camera and starting at ₹84,999. Budget gamers and camera enthusiasts finally have some serious competition this season! #VivoX300 #IndianTech",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 543,
+      "message_id": 555,
       "instant": false
     },
     {
-      "topic": "RBI Proposes 1-Hour Pause for High-Value UPI Payments",
-      "tweet": "RBI just proposed a 1-hour pause for UPI payments above ₹5 lakh to prevent fraud and unauthorized transfers. Good news for your peace of mind—gives you time to double-check before large money leaves your account. #UPI #FinancialSafety",
+      "topic": "Oppo Find X9s and Find X9 Ultra to Launch in India in May",
+      "tweet": "Oppo's Find X9s and X9 Ultra flagships are landing in India this May with cutting-edge imaging tech and premium specs. Finally, we'll get to experience Oppo's latest innovation without waiting for global rollouts! #OppoFind #TechLaunch",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 544,
+      "message_id": 556,
       "instant": false
     },
     {
-      "topic": "GeForce NOW Cloud Gaming Service Now Available in India at Rs 999",
-      "tweet": "NVIDIA's GeForce NOW just landed in India at ₹999/month, letting you play AAA games without dropping ₹2 lakhs on a beast PC. Finally, your old laptop can stop sweating during those gaming sessions. #GeForceNOW #IndianGaming",
+      "topic": "OnePlus Ace 6 Ultra Metal Storm Colour Revealed - Launch April 28",
+      "tweet": "OnePlus Ace 6 Ultra's stunning Metal Storm color drops on April 28 with its signature sleek gray finish and premium build quality. If you've been waiting for that perfect phone aesthetic, this one's giving flagship vibes without burning a hole in your pocket. #OnePlus #TechLaunch",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 545,
+      "message_id": 557,
       "instant": false
     },
     {
-      "topic": "Critical Software Security Updates: Why You Shouldn't Ignore Them",
-      "tweet": "Your apps just dropped critical security patches today—ignoring them is like leaving your door unlocked while traveling. Update everything now because hackers literally hunt for people skipping these fixes, and it takes 2 minutes vs. losing ₹50,000+ to fraud.",
+      "topic": "Motorola Edge 70 Pro Launched at ₹36,999 with Sony LYTIA 710 Camera",
+      "tweet": "Motorola Edge 70 Pro just dropped at ₹36,999 with Sony's LYTIA 710 camera sensor for crisp shots in any light. Finally a mid-range phone that doesn't compromise on photography — your Instagram feed called, it's ready! #MotorolaEdge70Pro #IndianTech",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 546,
+      "message_id": 558,
+      "instant": false
+    },
+    {
+      "topic": "RBI Orders Bank Compensation for Digital Arrest Scam Victims",
+      "tweet": "RBI has ordered banks to compensate victims of digital arrest scams with full refunds of stolen amounts. This means if you fell for those fake cop calls, your money's coming back — finally some real justice in the digital world! #RBIAction #DigitalSafety",
+      "status": "pending",
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 559,
+      "instant": false
+    },
+    {
+      "topic": "PNB Partners Kiwi to Launch Credit-Enabled UPI for Users",
+      "tweet": "PNB has partnered with Kiwi to launch credit-enabled UPI, letting you borrow up to ₹1 lakh instantly for payments without separate app switching. Your daily UPI shopping just got a credit card vibe—pay now, repay later with actual flexibility. #DigitalPayments #FinTech",
+      "status": "pending",
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 560,
       "instant": false
     }
   ],
-  "date": "2026-04-20",
-  "generated_at": "2026-04-20T04:57:57.579209"
+  "date": "2026-04-23",
+  "generated_at": "2026-04-23T07:23:05.776762"
 }
