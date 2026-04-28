@@ -1,106 +1,106 @@
 {
   "tweets": [
     {
-      "topic": "WhatsApp Launches Prepaid Mobile Recharge Feature in India",
-      "tweet": "WhatsApp is now letting you recharge your mobile number directly through the app in India, with plans starting as low as ₹29. No more jumping between apps—your chat, calls, and bill payments are all in one place now! #WhatsApp #IndianTech",
+      "topic": "Jio launches ₹459 Youth Gaming Plan with 2GB daily data and OTT access",
+      "tweet": "Jio just dropped a ₹459 Youth Gaming Plan with 2GB daily data and OTT bundle—perfect for students who want gaming without burning their wallet. Finally, a plan that gets what young gamers actually need! #JioGaming #IndianTech",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 564,
+      "message_id": 578,
       "instant": false
     },
     {
-      "topic": "Reliance Jio Gaming Plan Rs 459 with Snapchat+ and Premium Apps",
-      "tweet": "Reliance Jio just launched a ₹459 gaming plan bundling Snapchat+ and premium apps—basically your entertainment buffet in one subscription. Finally, someone realized we don't want to juggle 10 different apps with 10 different bills! #JioGaming #StreamingSmart",
+      "topic": "OnePlus Nord CE 6 Lite launches in India on May 7",
+      "tweet": "OnePlus Nord CE 6 Lite launches May 7 in India with expected pricing around ₹20,000 for the base variant. Perfect timing if you're hunting for a solid mid-range phone without burning a hole in your pocket! #OnePlusNord #IndiaLaunch",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 565,
+      "message_id": 579,
       "instant": false
     },
     {
-      "topic": "OnePlus Nord 6 India Launch on April 7",
-      "tweet": "OnePlus Nord 6 is launching in India on April 7 with a starting price of ₹19,999 and will feature a 120Hz AMOLED display. Finally, a solid mid-range phone that won't make your wallet cry while giving you that smooth scrolling experience. #OnePlusNord6 #TechLaunch",
+      "topic": "Vivo X300 Ultra India launch on May 6",
+      "tweet": "Vivo X300 Ultra launches in India on May 6 with a flagship chip and 50MP camera setup. Finally getting that premium phone without emptying your wallet completely! 📱 #VivoX300Ultra #IndiaLaunch",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 566,
+      "message_id": 580,
       "instant": false
     },
     {
-      "topic": "Vivo X300 Ultra and X300 FE India Launch on May 6",
-      "tweet": "Vivo's launching the X300 Ultra and X300 FE on May 6 in India, bringing flagship imaging and performance at different price points for everyone. Time to finally upgrade from that 3-year-old phone gathering dust in your drawer! #VivoX300 #IndiaLaunch",
+      "topic": "HMD Vibe 2 launching in India next month via Flipkart",
+      "tweet": "HMD Vibe 2 is landing in India next month exclusively on Flipkart with specs that'll make budget phone hunters actually excited. Finally, a fresh challenger in the affordable segment that doesn't feel like you're settling for less. #HMDVibe2 #BudgetPhones",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 567,
+      "message_id": 581,
       "instant": false
     },
     {
-      "topic": "Poco C81 Budget Smartphone Launch in India",
-      "tweet": "Poco C81 just launched in India starting at ₹8,999 with a 6.56\" display and 5000mAh battery. Finally a decent no-fuss phone that won't make your wallet cry! #PococC81 #BudgetPhones",
+      "topic": "OPPO Find X9 Ultra and Find X9s premium smartphones launched in India",
+      "tweet": "OPPO just dropped the Find X9 Ultra and X9s in India with 50MP cameras and Snapdragon 8 Elite processors—premium flagships ready to compete. Time for camera enthusiasts to finally have some serious alternatives that won't completely drain your wallet. #OPPOIndia #FindX9",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 568,
+      "message_id": 582,
       "instant": false
     },
     {
-      "topic": "iQOO Phone with Dimensity 9500 and 200MP Camera Launched",
-      "tweet": "iQOO just dropped the Dimensity 9500 beast with a 200MP camera—basically a powerhouse for mobile gaming and photography without breaking the bank. If you've been eyeing a flagship killer around ₹35-40K, this might be your moment. #iQOO #TechLaunch",
+      "topic": "vivo T5 Pro with 9020 mAh battery launched with Snapdragon processor",
+      "tweet": "Vivo T5 Pro just dropped with a beefy 9020 mAh battery and Snapdragon processor for solid everyday performance. This means your phone finally won't cry for a charger by 6 PM. #VivoT5Pro #BatteryLife",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 569,
+      "message_id": 583,
       "instant": false
     },
     {
-      "topic": "Samsung Galaxy Z Fold 8 India Launch Details and Pricing",
-      "tweet": "Samsung Galaxy Z Fold 8 just launched in India starting at ₹1,64,999 for the base model with enhanced durability and AI features. Finally, a foldable that doesn't feel like emptying your wallet for tomorrow's tech today. #SamsungIndia #FoldablePhones",
+      "topic": "WhatsApp bans 9,400 accounts linked to digital arrest scams in India",
+      "tweet": "WhatsApp has banned 9,400 accounts involved in digital arrest scams targeting Indian users in recent months. Good news for our inboxes—stay alert and never pay anyone claiming to be from law enforcement over chat. #CyberSafety #StaySmart",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 570,
+      "message_id": 584,
       "instant": false
     },
     {
-      "topic": "RBI Digital Payment Rules: New OTP Requirements from April 1",
-      "tweet": "RBI's tightening digital payment security from April 1 — all transactions now need OTP verification, no exceptions for repeat payments. Your UPI and card payments just got a safety upgrade, though yeah, typing OTP every time will test your patience a bit.",
+      "topic": "Amazon expands quick commerce service to 100 cities across India",
+      "tweet": "Amazon's quick commerce now reaches 100 Indian cities, aiming to deliver groceries in 10-15 minutes with same-day options. So your midnight snack cravings finally have a legal way to happen without raiding the neighbor's kitchen! #QuickCommerce #AmazonIndia",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 571,
+      "message_id": 585,
       "instant": false
     },
     {
-      "topic": "Flipkart Minutes App Launch - Quick Commerce Service",
-      "tweet": "Flipkart launched its Minutes app offering 10-minute delivery across 50+ cities with ₹99 membership, taking direct aim at Blinkit and Zepto's quick commerce dominance.",
-      "status": "posting",
-      "slot_label": null,
-      "utc_hour": null,
-      "utc_min": null,
-      "message_id": 572,
-      "instant": false
-    },
-    {
-      "topic": "Amazon AI Store Launch for India with Smart Devices",
-      "tweet": "Amazon's new AI Store in India lets you grab smart devices like Echo and Fire TV without hitting checkout — just walk out and get billed via your Amazon account.",
+      "topic": "Google Wallet adds Aadhaar Digital ID support in India",
+      "tweet": "Google Wallet now supports Aadhaar Digital ID in India, making your identity verification super convenient on your phone. No more juggling multiple apps to prove you're you—just one tap away! #GoogleWallet #DigitalIndia",
       "status": "pending",
       "slot_label": null,
       "utc_hour": null,
       "utc_min": null,
-      "message_id": 573,
+      "message_id": 586,
+      "instant": false
+    },
+    {
+      "topic": "Nothing launches Essential Voice AI-powered speech-to-text app",
+      "tweet": "Nothing just dropped Essential, their AI-powered speech-to-text app that turns your voice into text in real-time. Finally, a solid Indian alternative to expensive transcription tools—could save creators and professionals some serious ₹ monthly. #NothingTech #AIindia",
+      "status": "pending",
+      "slot_label": null,
+      "utc_hour": null,
+      "utc_min": null,
+      "message_id": 587,
       "instant": false
     }
   ],
-  "date": "2026-04-25",
-  "generated_at": "2026-04-25T07:33:37.684861"
+  "date": "2026-04-28",
+  "generated_at": "2026-04-28T13:31:06.645119"
 }
